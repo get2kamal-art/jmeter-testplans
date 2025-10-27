@@ -25,6 +25,7 @@
         <stringProp name="ThreadGroup.delay">0</stringProp>
       </ThreadGroup>
       <hashTree>
+        <!-- ✅ HTTP Sampler -->
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="HTTP Request" enabled="true">
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
             <collectionProp name="Arguments.arguments"/>
@@ -54,7 +55,7 @@
           <hashTree/>
         </hashTree>
 
-        <!-- ✅ Backend Listener for InfluxDB -->
+        <!-- ✅ Backend Listener (InfluxDB Integration) -->
         <BackendListener guiclass="BackendListenerGui" testclass="BackendListener" testname="InfluxDB Backend Listener" enabled="true">
           <elementProp name="arguments" elementType="Arguments">
             <collectionProp name="Arguments.arguments">
@@ -64,7 +65,7 @@
               </elementProp>
               <elementProp name="influxdbUrl" elementType="Argument">
                 <stringProp name="Argument.name">influxdbUrl</stringProp>
-                <stringProp name="Argument.value">http://influxdb-service.default.svc.cluster.local:8086/write?db=jmeter</stringProp>
+                <stringProp name="Argument.value">http://influxdb.influxdb.svc.cluster.local:8086/write?db=jmeter</stringProp>
               </elementProp>
               <elementProp name="application" elementType="Argument">
                 <stringProp name="Argument.name">application</stringProp>
@@ -99,7 +100,7 @@
         </BackendListener>
         <hashTree/>
 
-        <!-- ✅ Save results to JTL -->
+        <!-- ✅ Save Results to File -->
         <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report" enabled="true">
           <boolProp name="ResultCollector.error_logging">false</boolProp>
           <objProp>
