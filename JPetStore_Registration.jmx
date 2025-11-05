@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <jmeterTestPlan version="1.2" properties="5.0" jmeter="5.6.3">
   <hashTree>
     <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="JPetStore">
@@ -25,11 +25,11 @@
     </TestPlan>
     <hashTree>
       <CookieManager guiclass="CookiePanel" testclass="CookieManager" testname="HTTP Cookie Manager">
-        <collectionProp name="CookieManager.cookies" />
+        <collectionProp name="CookieManager.cookies"/>
         <boolProp name="CookieManager.clearEachIteration">false</boolProp>
         <boolProp name="CookieManager.controlledByThreadGroup">true</boolProp>
       </CookieManager>
-      <hashTree />
+      <hashTree/>
       <kg.apc.jmeter.threads.UltimateThreadGroup guiclass="kg.apc.jmeter.threads.UltimateThreadGroupGui" testclass="kg.apc.jmeter.threads.UltimateThreadGroup" testname="jp@gc - Ultimate Thread Group">
         <collectionProp name="ultimatethreadgroupdata">
           <collectionProp name="-213187583">
@@ -50,7 +50,7 @@
         <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config">
           <stringProp name="delimiter">,</stringProp>
           <stringProp name="fileEncoding">UTF-8</stringProp>
-          <stringProp name="filename">${__P(CSV_FILE,jPetStore_userData.csv)}</stringProp>
+          <stringProp name="filename">jPetStore_userData.csv</stringProp>
           <boolProp name="ignoreFirstLine">true</boolProp>
           <boolProp name="quotedData">false</boolProp>
           <boolProp name="recycle">false</boolProp>
@@ -58,7 +58,7 @@
           <boolProp name="stopThread">true</boolProp>
           <stringProp name="variableNames">username,password,P_username,order.creditCard,order.expiryDate,account.firstName,account.lastName,account.email,account.phone,account.address1,account.city,account.state,account.zip,account.country,</stringProp>
         </CSVDataSet>
-        <hashTree />
+        <hashTree/>
         <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="00_Launch">
           <boolProp name="TransactionController.parent">true</boolProp>
           <boolProp name="TransactionController.includeTimers">false</boolProp>
@@ -74,7 +74,7 @@
             <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
             <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
-              <collectionProp name="Arguments.arguments" />
+              <collectionProp name="Arguments.arguments"/>
             </elementProp>
           </HTTPSamplerProxy>
           <hashTree>
@@ -102,7 +102,7 @@
                 </elementProp>
                 <elementProp name="sec-ch-ua" elementType="Header">
                   <stringProp name="Header.name">sec-ch-ua</stringProp>
-                  <stringProp name="Header.value">"Google Chrome";v="125", "Chromium";v="125", "Not.A/Brand";v="24"</stringProp>
+                  <stringProp name="Header.value">&quot;Google Chrome&quot;;v=&quot;125&quot;, &quot;Chromium&quot;;v=&quot;125&quot;, &quot;Not.A/Brand&quot;;v=&quot;24&quot;</stringProp>
                 </elementProp>
                 <elementProp name="sec-ch-ua-mobile" elementType="Header">
                   <stringProp name="Header.name">sec-ch-ua-mobile</stringProp>
@@ -110,7 +110,7 @@
                 </elementProp>
                 <elementProp name="sec-ch-ua-platform" elementType="Header">
                   <stringProp name="Header.name">sec-ch-ua-platform</stringProp>
-                  <stringProp name="Header.value">"Windows"</stringProp>
+                  <stringProp name="Header.value">&quot;Windows&quot;</stringProp>
                 </elementProp>
                 <elementProp name="Upgrade-Insecure-Requests" elementType="Header">
                   <stringProp name="Header.name">Upgrade-Insecure-Requests</stringProp>
@@ -134,17 +134,17 @@
                 </elementProp>
               </collectionProp>
             </HeaderManager>
-            <hashTree />
+            <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="1513469963">Copyright 2010-2022 the original author or authors</stringProp>
               </collectionProp>
-              <stringProp name="Assertion.custom_message" />
+              <stringProp name="Assertion.custom_message"></stringProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
               <intProp name="Assertion.test_type">2</intProp>
             </ResponseAssertion>
-            <hashTree />
+            <hashTree/>
           </hashTree>
         </hashTree>
         <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Think time">
@@ -157,7 +157,7 @@
             <stringProp name="ConstantTimer.delay">${constant}</stringProp>
             <stringProp name="RandomTimer.range">${deviation}</stringProp>
           </GaussianRandomTimer>
-          <hashTree />
+          <hashTree/>
         </hashTree>
         <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="01_00_Enter the store">
           <boolProp name="TransactionController.parent">true</boolProp>
@@ -174,7 +174,7 @@
             <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
             <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
-              <collectionProp name="Arguments.arguments" />
+              <collectionProp name="Arguments.arguments"/>
             </elementProp>
           </HTTPSamplerProxy>
           <hashTree>
@@ -206,7 +206,7 @@
                 </elementProp>
                 <elementProp name="sec-ch-ua" elementType="Header">
                   <stringProp name="Header.name">sec-ch-ua</stringProp>
-                  <stringProp name="Header.value">"Google Chrome";v="125", "Chromium";v="125", "Not.A/Brand";v="24"</stringProp>
+                  <stringProp name="Header.value">&quot;Google Chrome&quot;;v=&quot;125&quot;, &quot;Chromium&quot;;v=&quot;125&quot;, &quot;Not.A/Brand&quot;;v=&quot;24&quot;</stringProp>
                 </elementProp>
                 <elementProp name="sec-ch-ua-mobile" elementType="Header">
                   <stringProp name="Header.name">sec-ch-ua-mobile</stringProp>
@@ -214,7 +214,7 @@
                 </elementProp>
                 <elementProp name="sec-ch-ua-platform" elementType="Header">
                   <stringProp name="Header.name">sec-ch-ua-platform</stringProp>
-                  <stringProp name="Header.value">"Windows"</stringProp>
+                  <stringProp name="Header.value">&quot;Windows&quot;</stringProp>
                 </elementProp>
                 <elementProp name="Upgrade-Insecure-Requests" elementType="Header">
                   <stringProp name="Header.name">Upgrade-Insecure-Requests</stringProp>
@@ -234,27 +234,27 @@
                 </elementProp>
               </collectionProp>
             </HeaderManager>
-            <hashTree />
+            <hashTree/>
             <BoundaryExtractor guiclass="BoundaryExtractorGui" testclass="BoundaryExtractor" testname="jSessionId" enabled="true">
               <stringProp name="BoundaryExtractor.useHeaders">false</stringProp>
               <stringProp name="BoundaryExtractor.refname">jSessionId</stringProp>
               <stringProp name="BoundaryExtractor.lboundary">jsessionid=</stringProp>
-              <stringProp name="BoundaryExtractor.rboundary">"&gt;</stringProp>
+              <stringProp name="BoundaryExtractor.rboundary">&quot;&gt;</stringProp>
               <stringProp name="BoundaryExtractor.default">NojSessionIdfound</stringProp>
               <boolProp name="BoundaryExtractor.default_empty_value">false</boolProp>
               <stringProp name="BoundaryExtractor.match_number">1</stringProp>
             </BoundaryExtractor>
-            <hashTree />
+            <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="1748960066">DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional</stringProp>
+                <stringProp name="1748960066">DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional</stringProp>
               </collectionProp>
-              <stringProp name="Assertion.custom_message" />
+              <stringProp name="Assertion.custom_message"></stringProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
               <intProp name="Assertion.test_type">2</intProp>
             </ResponseAssertion>
-            <hashTree />
+            <hashTree/>
           </hashTree>
         </hashTree>
         <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Think time">
@@ -267,7 +267,7 @@
             <stringProp name="ConstantTimer.delay">${constant}</stringProp>
             <stringProp name="RandomTimer.range">${deviation}</stringProp>
           </GaussianRandomTimer>
-          <hashTree />
+          <hashTree/>
         </hashTree>
         <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="Throughput Controller - user_Registeration">
           <intProp name="ThroughputController.style">1</intProp>
@@ -299,7 +299,7 @@
                   <elementProp name="signonForm" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">signonForm</stringProp>
-                    <stringProp name="Argument.value" />
+                    <stringProp name="Argument.value"></stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
@@ -335,7 +335,7 @@
                   </elementProp>
                   <elementProp name="sec-ch-ua" elementType="Header">
                     <stringProp name="Header.name">sec-ch-ua</stringProp>
-                    <stringProp name="Header.value">"Google Chrome";v="125", "Chromium";v="125", "Not.A/Brand";v="24"</stringProp>
+                    <stringProp name="Header.value">&quot;Google Chrome&quot;;v=&quot;125&quot;, &quot;Chromium&quot;;v=&quot;125&quot;, &quot;Not.A/Brand&quot;;v=&quot;24&quot;</stringProp>
                   </elementProp>
                   <elementProp name="sec-ch-ua-mobile" elementType="Header">
                     <stringProp name="Header.name">sec-ch-ua-mobile</stringProp>
@@ -343,7 +343,7 @@
                   </elementProp>
                   <elementProp name="sec-ch-ua-platform" elementType="Header">
                     <stringProp name="Header.name">sec-ch-ua-platform</stringProp>
-                    <stringProp name="Header.value">"Windows"</stringProp>
+                    <stringProp name="Header.value">&quot;Windows&quot;</stringProp>
                   </elementProp>
                   <elementProp name="Upgrade-Insecure-Requests" elementType="Header">
                     <stringProp name="Header.name">Upgrade-Insecure-Requests</stringProp>
@@ -363,17 +363,17 @@
                   </elementProp>
                 </collectionProp>
               </HeaderManager>
-              <hashTree />
+              <hashTree/>
               <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
                 <collectionProp name="Asserion.test_strings">
-                  <stringProp name="-1874873855">!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional</stringProp>
+                  <stringProp name="-1874873855">!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional</stringProp>
                 </collectionProp>
-                <stringProp name="Assertion.custom_message" />
+                <stringProp name="Assertion.custom_message"></stringProp>
                 <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
                 <boolProp name="Assertion.assume_success">false</boolProp>
                 <intProp name="Assertion.test_type">2</intProp>
               </ResponseAssertion>
-              <hashTree />
+              <hashTree/>
             </hashTree>
           </hashTree>
           <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Think time" enabled="true">
@@ -386,7 +386,7 @@
               <stringProp name="ConstantTimer.delay">${constant}</stringProp>
               <stringProp name="RandomTimer.range">${deviation}</stringProp>
             </GaussianRandomTimer>
-            <hashTree />
+            <hashTree/>
           </hashTree>
           <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="02_02_00_Create account" enabled="true">
             <boolProp name="TransactionController.parent">true</boolProp>
@@ -407,7 +407,7 @@
                   <elementProp name="newAccountForm" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">newAccountForm</stringProp>
-                    <stringProp name="Argument.value" />
+                    <stringProp name="Argument.value"></stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
@@ -443,7 +443,7 @@
                   </elementProp>
                   <elementProp name="sec-ch-ua" elementType="Header">
                     <stringProp name="Header.name">sec-ch-ua</stringProp>
-                    <stringProp name="Header.value">"Google Chrome";v="125", "Chromium";v="125", "Not.A/Brand";v="24"</stringProp>
+                    <stringProp name="Header.value">&quot;Google Chrome&quot;;v=&quot;125&quot;, &quot;Chromium&quot;;v=&quot;125&quot;, &quot;Not.A/Brand&quot;;v=&quot;24&quot;</stringProp>
                   </elementProp>
                   <elementProp name="sec-ch-ua-mobile" elementType="Header">
                     <stringProp name="Header.name">sec-ch-ua-mobile</stringProp>
@@ -451,7 +451,7 @@
                   </elementProp>
                   <elementProp name="sec-ch-ua-platform" elementType="Header">
                     <stringProp name="Header.name">sec-ch-ua-platform</stringProp>
-                    <stringProp name="Header.value">"Windows"</stringProp>
+                    <stringProp name="Header.value">&quot;Windows&quot;</stringProp>
                   </elementProp>
                   <elementProp name="Upgrade-Insecure-Requests" elementType="Header">
                     <stringProp name="Header.name">Upgrade-Insecure-Requests</stringProp>
@@ -471,27 +471,27 @@
                   </elementProp>
                 </collectionProp>
               </HeaderManager>
-              <hashTree />
+              <hashTree/>
               <BoundaryExtractor guiclass="BoundaryExtractorGui" testclass="BoundaryExtractor" testname="sourcePage" enabled="true">
                 <stringProp name="BoundaryExtractor.useHeaders">false</stringProp>
                 <stringProp name="BoundaryExtractor.refname">sourcePage</stringProp>
-                <stringProp name="BoundaryExtractor.lboundary">"_sourcePage" value="</stringProp>
-                <stringProp name="BoundaryExtractor.rboundary">"</stringProp>
+                <stringProp name="BoundaryExtractor.lboundary">&quot;_sourcePage&quot; value=&quot;</stringProp>
+                <stringProp name="BoundaryExtractor.rboundary">&quot;</stringProp>
                 <stringProp name="BoundaryExtractor.default">NosourcePagefound</stringProp>
                 <boolProp name="BoundaryExtractor.default_empty_value">false</boolProp>
                 <stringProp name="BoundaryExtractor.match_number">2</stringProp>
               </BoundaryExtractor>
-              <hashTree />
+              <hashTree/>
               <BoundaryExtractor guiclass="BoundaryExtractorGui" testclass="BoundaryExtractor" testname="__fp" enabled="true">
                 <stringProp name="BoundaryExtractor.useHeaders">false</stringProp>
                 <stringProp name="BoundaryExtractor.refname">__fp</stringProp>
-                <stringProp name="BoundaryExtractor.lboundary">"__fp" value="</stringProp>
-                <stringProp name="BoundaryExtractor.rboundary">"</stringProp>
+                <stringProp name="BoundaryExtractor.lboundary">&quot;__fp&quot; value=&quot;</stringProp>
+                <stringProp name="BoundaryExtractor.rboundary">&quot;</stringProp>
                 <stringProp name="BoundaryExtractor.default">No__fpfound</stringProp>
                 <boolProp name="BoundaryExtractor.default_empty_value">false</boolProp>
                 <stringProp name="BoundaryExtractor.match_number">2</stringProp>
               </BoundaryExtractor>
-              <hashTree />
+              <hashTree/>
             </hashTree>
             <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="02_02_02_Create account" enabled="true">
               <stringProp name="TestPlan.comments">Detected the start of a redirect chain</stringProp>
@@ -565,7 +565,7 @@
                   <elementProp name="account.address2" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">account.address2</stringProp>
-                    <stringProp name="Argument.value" />
+                    <stringProp name="Argument.value"></stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
@@ -668,7 +668,7 @@
                   </elementProp>
                   <elementProp name="sec-ch-ua" elementType="Header">
                     <stringProp name="Header.name">sec-ch-ua</stringProp>
-                    <stringProp name="Header.value">"Google Chrome";v="125", "Chromium";v="125", "Not.A/Brand";v="24"</stringProp>
+                    <stringProp name="Header.value">&quot;Google Chrome&quot;;v=&quot;125&quot;, &quot;Chromium&quot;;v=&quot;125&quot;, &quot;Not.A/Brand&quot;;v=&quot;24&quot;</stringProp>
                   </elementProp>
                   <elementProp name="sec-ch-ua-mobile" elementType="Header">
                     <stringProp name="Header.name">sec-ch-ua-mobile</stringProp>
@@ -676,7 +676,7 @@
                   </elementProp>
                   <elementProp name="sec-ch-ua-platform" elementType="Header">
                     <stringProp name="Header.name">sec-ch-ua-platform</stringProp>
-                    <stringProp name="Header.value">"Windows"</stringProp>
+                    <stringProp name="Header.value">&quot;Windows&quot;</stringProp>
                   </elementProp>
                   <elementProp name="Upgrade-Insecure-Requests" elementType="Header">
                     <stringProp name="Header.name">Upgrade-Insecure-Requests</stringProp>
@@ -704,7 +704,7 @@
                   </elementProp>
                 </collectionProp>
               </HeaderManager>
-              <hashTree />
+              <hashTree/>
             </hashTree>
             <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="02_02_03_Create account" enabled="true">
               <stringProp name="HTTPSampler.domain">${Base_URL}</stringProp>
@@ -717,7 +717,7 @@
               <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
               <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
-                <collectionProp name="Arguments.arguments" />
+                <collectionProp name="Arguments.arguments"/>
               </elementProp>
             </HTTPSamplerProxy>
             <hashTree>
@@ -749,7 +749,7 @@
                   </elementProp>
                   <elementProp name="sec-ch-ua" elementType="Header">
                     <stringProp name="Header.name">sec-ch-ua</stringProp>
-                    <stringProp name="Header.value">"Google Chrome";v="125", "Chromium";v="125", "Not.A/Brand";v="24"</stringProp>
+                    <stringProp name="Header.value">&quot;Google Chrome&quot;;v=&quot;125&quot;, &quot;Chromium&quot;;v=&quot;125&quot;, &quot;Not.A/Brand&quot;;v=&quot;24&quot;</stringProp>
                   </elementProp>
                   <elementProp name="sec-ch-ua-mobile" elementType="Header">
                     <stringProp name="Header.name">sec-ch-ua-mobile</stringProp>
@@ -757,7 +757,7 @@
                   </elementProp>
                   <elementProp name="sec-ch-ua-platform" elementType="Header">
                     <stringProp name="Header.name">sec-ch-ua-platform</stringProp>
-                    <stringProp name="Header.value">"Windows"</stringProp>
+                    <stringProp name="Header.value">&quot;Windows&quot;</stringProp>
                   </elementProp>
                   <elementProp name="Upgrade-Insecure-Requests" elementType="Header">
                     <stringProp name="Header.name">Upgrade-Insecure-Requests</stringProp>
@@ -781,17 +781,17 @@
                   </elementProp>
                 </collectionProp>
               </HeaderManager>
-              <hashTree />
+              <hashTree/>
               <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
                 <collectionProp name="Asserion.test_strings">
                   <stringProp name="-33736649">JPetStore Demo</stringProp>
                 </collectionProp>
-                <stringProp name="Assertion.custom_message" />
+                <stringProp name="Assertion.custom_message"></stringProp>
                 <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
                 <boolProp name="Assertion.assume_success">false</boolProp>
                 <intProp name="Assertion.test_type">2</intProp>
               </ResponseAssertion>
-              <hashTree />
+              <hashTree/>
             </hashTree>
           </hashTree>
           <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Think time" enabled="true">
@@ -804,7 +804,7 @@
               <stringProp name="ConstantTimer.delay">${constant}</stringProp>
               <stringProp name="RandomTimer.range">${deviation}</stringProp>
             </GaussianRandomTimer>
-            <hashTree />
+            <hashTree/>
           </hashTree>
           <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="02_03_00_User_SignIn" enabled="true">
             <boolProp name="TransactionController.parent">true</boolProp>
@@ -826,7 +826,7 @@
                   <elementProp name="signonForm" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">signonForm</stringProp>
-                    <stringProp name="Argument.value" />
+                    <stringProp name="Argument.value"></stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
@@ -862,7 +862,7 @@
                   </elementProp>
                   <elementProp name="sec-ch-ua" elementType="Header">
                     <stringProp name="Header.name">sec-ch-ua</stringProp>
-                    <stringProp name="Header.value">"Google Chrome";v="125", "Chromium";v="125", "Not.A/Brand";v="24"</stringProp>
+                    <stringProp name="Header.value">&quot;Google Chrome&quot;;v=&quot;125&quot;, &quot;Chromium&quot;;v=&quot;125&quot;, &quot;Not.A/Brand&quot;;v=&quot;24&quot;</stringProp>
                   </elementProp>
                   <elementProp name="sec-ch-ua-mobile" elementType="Header">
                     <stringProp name="Header.name">sec-ch-ua-mobile</stringProp>
@@ -870,7 +870,7 @@
                   </elementProp>
                   <elementProp name="sec-ch-ua-platform" elementType="Header">
                     <stringProp name="Header.name">sec-ch-ua-platform</stringProp>
-                    <stringProp name="Header.value">"Windows"</stringProp>
+                    <stringProp name="Header.value">&quot;Windows&quot;</stringProp>
                   </elementProp>
                   <elementProp name="Upgrade-Insecure-Requests" elementType="Header">
                     <stringProp name="Header.name">Upgrade-Insecure-Requests</stringProp>
@@ -890,27 +890,27 @@
                   </elementProp>
                 </collectionProp>
               </HeaderManager>
-              <hashTree />
+              <hashTree/>
               <BoundaryExtractor guiclass="BoundaryExtractorGui" testclass="BoundaryExtractor" testname="sourcePage1" enabled="true">
                 <stringProp name="BoundaryExtractor.useHeaders">false</stringProp>
                 <stringProp name="BoundaryExtractor.refname">sourcePage1</stringProp>
-                <stringProp name="BoundaryExtractor.lboundary">"_sourcePage" value="</stringProp>
-                <stringProp name="BoundaryExtractor.rboundary">"</stringProp>
+                <stringProp name="BoundaryExtractor.lboundary">&quot;_sourcePage&quot; value=&quot;</stringProp>
+                <stringProp name="BoundaryExtractor.rboundary">&quot;</stringProp>
                 <stringProp name="BoundaryExtractor.default">NosourcePagefound</stringProp>
                 <boolProp name="BoundaryExtractor.default_empty_value">false</boolProp>
                 <stringProp name="BoundaryExtractor.match_number">2</stringProp>
               </BoundaryExtractor>
-              <hashTree />
+              <hashTree/>
               <BoundaryExtractor guiclass="BoundaryExtractorGui" testclass="BoundaryExtractor" testname="__fp1" enabled="true">
                 <stringProp name="BoundaryExtractor.useHeaders">false</stringProp>
                 <stringProp name="BoundaryExtractor.refname">__fp1</stringProp>
-                <stringProp name="BoundaryExtractor.lboundary">"__fp" value="</stringProp>
-                <stringProp name="BoundaryExtractor.rboundary">"</stringProp>
+                <stringProp name="BoundaryExtractor.lboundary">&quot;__fp&quot; value=&quot;</stringProp>
+                <stringProp name="BoundaryExtractor.rboundary">&quot;</stringProp>
                 <stringProp name="BoundaryExtractor.default">No__fpfound</stringProp>
                 <boolProp name="BoundaryExtractor.default_empty_value">false</boolProp>
                 <stringProp name="BoundaryExtractor.match_number">2</stringProp>
               </BoundaryExtractor>
-              <hashTree />
+              <hashTree/>
             </hashTree>
             <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="02_03_02_User_SignIn" enabled="true">
               <stringProp name="TestPlan.comments">Detected the start of a redirect chain</stringProp>
@@ -996,7 +996,7 @@
                   </elementProp>
                   <elementProp name="sec-ch-ua" elementType="Header">
                     <stringProp name="Header.name">sec-ch-ua</stringProp>
-                    <stringProp name="Header.value">"Google Chrome";v="125", "Chromium";v="125", "Not.A/Brand";v="24"</stringProp>
+                    <stringProp name="Header.value">&quot;Google Chrome&quot;;v=&quot;125&quot;, &quot;Chromium&quot;;v=&quot;125&quot;, &quot;Not.A/Brand&quot;;v=&quot;24&quot;</stringProp>
                   </elementProp>
                   <elementProp name="sec-ch-ua-mobile" elementType="Header">
                     <stringProp name="Header.name">sec-ch-ua-mobile</stringProp>
@@ -1004,7 +1004,7 @@
                   </elementProp>
                   <elementProp name="sec-ch-ua-platform" elementType="Header">
                     <stringProp name="Header.name">sec-ch-ua-platform</stringProp>
-                    <stringProp name="Header.value">"Windows"</stringProp>
+                    <stringProp name="Header.value">&quot;Windows&quot;</stringProp>
                   </elementProp>
                   <elementProp name="Upgrade-Insecure-Requests" elementType="Header">
                     <stringProp name="Header.name">Upgrade-Insecure-Requests</stringProp>
@@ -1032,7 +1032,7 @@
                   </elementProp>
                 </collectionProp>
               </HeaderManager>
-              <hashTree />
+              <hashTree/>
             </hashTree>
             <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="02_03_03_User_SignIn" enabled="true">
               <stringProp name="HTTPSampler.domain">${Base_URL}</stringProp>
@@ -1045,7 +1045,7 @@
               <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
               <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
-                <collectionProp name="Arguments.arguments" />
+                <collectionProp name="Arguments.arguments"/>
               </elementProp>
             </HTTPSamplerProxy>
             <hashTree>
@@ -1077,7 +1077,7 @@
                   </elementProp>
                   <elementProp name="sec-ch-ua" elementType="Header">
                     <stringProp name="Header.name">sec-ch-ua</stringProp>
-                    <stringProp name="Header.value">"Google Chrome";v="125", "Chromium";v="125", "Not.A/Brand";v="24"</stringProp>
+                    <stringProp name="Header.value">&quot;Google Chrome&quot;;v=&quot;125&quot;, &quot;Chromium&quot;;v=&quot;125&quot;, &quot;Not.A/Brand&quot;;v=&quot;24&quot;</stringProp>
                   </elementProp>
                   <elementProp name="sec-ch-ua-mobile" elementType="Header">
                     <stringProp name="Header.name">sec-ch-ua-mobile</stringProp>
@@ -1085,7 +1085,7 @@
                   </elementProp>
                   <elementProp name="sec-ch-ua-platform" elementType="Header">
                     <stringProp name="Header.name">sec-ch-ua-platform</stringProp>
-                    <stringProp name="Header.value">"Windows"</stringProp>
+                    <stringProp name="Header.value">&quot;Windows&quot;</stringProp>
                   </elementProp>
                   <elementProp name="Upgrade-Insecure-Requests" elementType="Header">
                     <stringProp name="Header.name">Upgrade-Insecure-Requests</stringProp>
@@ -1109,17 +1109,17 @@
                   </elementProp>
                 </collectionProp>
               </HeaderManager>
-              <hashTree />
+              <hashTree/>
               <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
                 <collectionProp name="Asserion.test_strings">
                   <stringProp name="-33736649">JPetStore Demo</stringProp>
                 </collectionProp>
-                <stringProp name="Assertion.custom_message" />
+                <stringProp name="Assertion.custom_message"></stringProp>
                 <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
                 <boolProp name="Assertion.assume_success">false</boolProp>
                 <intProp name="Assertion.test_type">2</intProp>
               </ResponseAssertion>
-              <hashTree />
+              <hashTree/>
             </hashTree>
           </hashTree>
           <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Think time" enabled="true">
@@ -1132,7 +1132,7 @@
               <stringProp name="ConstantTimer.delay">${constant}</stringProp>
               <stringProp name="RandomTimer.range">${deviation}</stringProp>
             </GaussianRandomTimer>
-            <hashTree />
+            <hashTree/>
           </hashTree>
           <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="02_04_00_User_Signout" enabled="true">
             <boolProp name="TransactionController.parent">true</boolProp>
@@ -1155,7 +1155,7 @@
                   <elementProp name="signoff" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">signoff</stringProp>
-                    <stringProp name="Argument.value" />
+                    <stringProp name="Argument.value"></stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
@@ -1191,7 +1191,7 @@
                   </elementProp>
                   <elementProp name="sec-ch-ua" elementType="Header">
                     <stringProp name="Header.name">sec-ch-ua</stringProp>
-                    <stringProp name="Header.value">"Google Chrome";v="125", "Chromium";v="125", "Not.A/Brand";v="24"</stringProp>
+                    <stringProp name="Header.value">&quot;Google Chrome&quot;;v=&quot;125&quot;, &quot;Chromium&quot;;v=&quot;125&quot;, &quot;Not.A/Brand&quot;;v=&quot;24&quot;</stringProp>
                   </elementProp>
                   <elementProp name="sec-ch-ua-mobile" elementType="Header">
                     <stringProp name="Header.name">sec-ch-ua-mobile</stringProp>
@@ -1199,7 +1199,7 @@
                   </elementProp>
                   <elementProp name="sec-ch-ua-platform" elementType="Header">
                     <stringProp name="Header.name">sec-ch-ua-platform</stringProp>
-                    <stringProp name="Header.value">"Windows"</stringProp>
+                    <stringProp name="Header.value">&quot;Windows&quot;</stringProp>
                   </elementProp>
                   <elementProp name="Upgrade-Insecure-Requests" elementType="Header">
                     <stringProp name="Header.name">Upgrade-Insecure-Requests</stringProp>
@@ -1219,7 +1219,7 @@
                   </elementProp>
                 </collectionProp>
               </HeaderManager>
-              <hashTree />
+              <hashTree/>
             </hashTree>
             <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="02_04_02_User_Signout" enabled="true">
               <stringProp name="HTTPSampler.domain">${Base_URL}</stringProp>
@@ -1232,7 +1232,7 @@
               <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
               <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
-                <collectionProp name="Arguments.arguments" />
+                <collectionProp name="Arguments.arguments"/>
               </elementProp>
             </HTTPSamplerProxy>
             <hashTree>
@@ -1264,7 +1264,7 @@
                   </elementProp>
                   <elementProp name="sec-ch-ua" elementType="Header">
                     <stringProp name="Header.name">sec-ch-ua</stringProp>
-                    <stringProp name="Header.value">"Google Chrome";v="125", "Chromium";v="125", "Not.A/Brand";v="24"</stringProp>
+                    <stringProp name="Header.value">&quot;Google Chrome&quot;;v=&quot;125&quot;, &quot;Chromium&quot;;v=&quot;125&quot;, &quot;Not.A/Brand&quot;;v=&quot;24&quot;</stringProp>
                   </elementProp>
                   <elementProp name="sec-ch-ua-mobile" elementType="Header">
                     <stringProp name="Header.name">sec-ch-ua-mobile</stringProp>
@@ -1272,7 +1272,7 @@
                   </elementProp>
                   <elementProp name="sec-ch-ua-platform" elementType="Header">
                     <stringProp name="Header.name">sec-ch-ua-platform</stringProp>
-                    <stringProp name="Header.value">"Windows"</stringProp>
+                    <stringProp name="Header.value">&quot;Windows&quot;</stringProp>
                   </elementProp>
                   <elementProp name="Upgrade-Insecure-Requests" elementType="Header">
                     <stringProp name="Header.name">Upgrade-Insecure-Requests</stringProp>
@@ -1292,17 +1292,17 @@
                   </elementProp>
                 </collectionProp>
               </HeaderManager>
-              <hashTree />
+              <hashTree/>
               <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
                 <collectionProp name="Asserion.test_strings">
                   <stringProp name="-2086233178">http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd</stringProp>
                 </collectionProp>
-                <stringProp name="Assertion.custom_message" />
+                <stringProp name="Assertion.custom_message"></stringProp>
                 <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
                 <boolProp name="Assertion.assume_success">false</boolProp>
                 <intProp name="Assertion.test_type">2</intProp>
               </ResponseAssertion>
-              <hashTree />
+              <hashTree/>
             </hashTree>
           </hashTree>
         </hashTree>
@@ -1336,7 +1336,7 @@
                   <elementProp name="signonForm" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">signonForm</stringProp>
-                    <stringProp name="Argument.value" />
+                    <stringProp name="Argument.value"></stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
@@ -1372,7 +1372,7 @@
                   </elementProp>
                   <elementProp name="sec-ch-ua" elementType="Header">
                     <stringProp name="Header.name">sec-ch-ua</stringProp>
-                    <stringProp name="Header.value">"Google Chrome";v="125", "Chromium";v="125", "Not.A/Brand";v="24"</stringProp>
+                    <stringProp name="Header.value">&quot;Google Chrome&quot;;v=&quot;125&quot;, &quot;Chromium&quot;;v=&quot;125&quot;, &quot;Not.A/Brand&quot;;v=&quot;24&quot;</stringProp>
                   </elementProp>
                   <elementProp name="sec-ch-ua-mobile" elementType="Header">
                     <stringProp name="Header.name">sec-ch-ua-mobile</stringProp>
@@ -1380,7 +1380,7 @@
                   </elementProp>
                   <elementProp name="sec-ch-ua-platform" elementType="Header">
                     <stringProp name="Header.name">sec-ch-ua-platform</stringProp>
-                    <stringProp name="Header.value">"Windows"</stringProp>
+                    <stringProp name="Header.value">&quot;Windows&quot;</stringProp>
                   </elementProp>
                   <elementProp name="Upgrade-Insecure-Requests" elementType="Header">
                     <stringProp name="Header.name">Upgrade-Insecure-Requests</stringProp>
@@ -1400,27 +1400,27 @@
                   </elementProp>
                 </collectionProp>
               </HeaderManager>
-              <hashTree />
+              <hashTree/>
               <BoundaryExtractor guiclass="BoundaryExtractorGui" testclass="BoundaryExtractor" testname="sourcePage2" enabled="true">
                 <stringProp name="BoundaryExtractor.useHeaders">false</stringProp>
                 <stringProp name="BoundaryExtractor.refname">sourcePage2</stringProp>
-                <stringProp name="BoundaryExtractor.lboundary">"_sourcePage" value="</stringProp>
-                <stringProp name="BoundaryExtractor.rboundary">"</stringProp>
+                <stringProp name="BoundaryExtractor.lboundary">&quot;_sourcePage&quot; value=&quot;</stringProp>
+                <stringProp name="BoundaryExtractor.rboundary">&quot;</stringProp>
                 <stringProp name="BoundaryExtractor.default">NosourcePagefound</stringProp>
                 <boolProp name="BoundaryExtractor.default_empty_value">false</boolProp>
                 <stringProp name="BoundaryExtractor.match_number">2</stringProp>
               </BoundaryExtractor>
-              <hashTree />
+              <hashTree/>
               <BoundaryExtractor guiclass="BoundaryExtractorGui" testclass="BoundaryExtractor" testname="__fp2" enabled="true">
                 <stringProp name="BoundaryExtractor.useHeaders">false</stringProp>
                 <stringProp name="BoundaryExtractor.refname">__fp2</stringProp>
-                <stringProp name="BoundaryExtractor.lboundary">"__fp" value="</stringProp>
-                <stringProp name="BoundaryExtractor.rboundary">"</stringProp>
+                <stringProp name="BoundaryExtractor.lboundary">&quot;__fp&quot; value=&quot;</stringProp>
+                <stringProp name="BoundaryExtractor.rboundary">&quot;</stringProp>
                 <stringProp name="BoundaryExtractor.default">No__fpfound</stringProp>
                 <boolProp name="BoundaryExtractor.default_empty_value">false</boolProp>
                 <stringProp name="BoundaryExtractor.match_number">2</stringProp>
               </BoundaryExtractor>
-              <hashTree />
+              <hashTree/>
             </hashTree>
             <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="03_01_02_user_Search_Catagory_SignIn">
               <stringProp name="TestPlan.comments">Detected the start of a redirect chain</stringProp>
@@ -1506,7 +1506,7 @@
                   </elementProp>
                   <elementProp name="sec-ch-ua" elementType="Header">
                     <stringProp name="Header.name">sec-ch-ua</stringProp>
-                    <stringProp name="Header.value">"Google Chrome";v="125", "Chromium";v="125", "Not.A/Brand";v="24"</stringProp>
+                    <stringProp name="Header.value">&quot;Google Chrome&quot;;v=&quot;125&quot;, &quot;Chromium&quot;;v=&quot;125&quot;, &quot;Not.A/Brand&quot;;v=&quot;24&quot;</stringProp>
                   </elementProp>
                   <elementProp name="sec-ch-ua-mobile" elementType="Header">
                     <stringProp name="Header.name">sec-ch-ua-mobile</stringProp>
@@ -1514,7 +1514,7 @@
                   </elementProp>
                   <elementProp name="sec-ch-ua-platform" elementType="Header">
                     <stringProp name="Header.name">sec-ch-ua-platform</stringProp>
-                    <stringProp name="Header.value">"Windows"</stringProp>
+                    <stringProp name="Header.value">&quot;Windows&quot;</stringProp>
                   </elementProp>
                   <elementProp name="Upgrade-Insecure-Requests" elementType="Header">
                     <stringProp name="Header.name">Upgrade-Insecure-Requests</stringProp>
@@ -1542,7 +1542,7 @@
                   </elementProp>
                 </collectionProp>
               </HeaderManager>
-              <hashTree />
+              <hashTree/>
             </hashTree>
             <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="03_01_03_user_Search_Catagory_SignIn">
               <stringProp name="HTTPSampler.domain">${Base_URL}</stringProp>
@@ -1555,7 +1555,7 @@
               <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
               <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
-                <collectionProp name="Arguments.arguments" />
+                <collectionProp name="Arguments.arguments"/>
               </elementProp>
             </HTTPSamplerProxy>
             <hashTree>
@@ -1587,7 +1587,7 @@
                   </elementProp>
                   <elementProp name="sec-ch-ua" elementType="Header">
                     <stringProp name="Header.name">sec-ch-ua</stringProp>
-                    <stringProp name="Header.value">"Google Chrome";v="125", "Chromium";v="125", "Not.A/Brand";v="24"</stringProp>
+                    <stringProp name="Header.value">&quot;Google Chrome&quot;;v=&quot;125&quot;, &quot;Chromium&quot;;v=&quot;125&quot;, &quot;Not.A/Brand&quot;;v=&quot;24&quot;</stringProp>
                   </elementProp>
                   <elementProp name="sec-ch-ua-mobile" elementType="Header">
                     <stringProp name="Header.name">sec-ch-ua-mobile</stringProp>
@@ -1595,7 +1595,7 @@
                   </elementProp>
                   <elementProp name="sec-ch-ua-platform" elementType="Header">
                     <stringProp name="Header.name">sec-ch-ua-platform</stringProp>
-                    <stringProp name="Header.value">"Windows"</stringProp>
+                    <stringProp name="Header.value">&quot;Windows&quot;</stringProp>
                   </elementProp>
                   <elementProp name="Upgrade-Insecure-Requests" elementType="Header">
                     <stringProp name="Header.name">Upgrade-Insecure-Requests</stringProp>
@@ -1619,37 +1619,37 @@
                   </elementProp>
                 </collectionProp>
               </HeaderManager>
-              <hashTree />
+              <hashTree/>
               <BoundaryExtractor guiclass="BoundaryExtractorGui" testclass="BoundaryExtractor" testname="sourcePage3" enabled="true">
                 <stringProp name="BoundaryExtractor.useHeaders">false</stringProp>
                 <stringProp name="BoundaryExtractor.refname">sourcePage3</stringProp>
-                <stringProp name="BoundaryExtractor.lboundary">"_sourcePage" value="</stringProp>
-                <stringProp name="BoundaryExtractor.rboundary">"</stringProp>
+                <stringProp name="BoundaryExtractor.lboundary">&quot;_sourcePage&quot; value=&quot;</stringProp>
+                <stringProp name="BoundaryExtractor.rboundary">&quot;</stringProp>
                 <stringProp name="BoundaryExtractor.default">NosourcePagefound</stringProp>
                 <boolProp name="BoundaryExtractor.default_empty_value">false</boolProp>
                 <stringProp name="BoundaryExtractor.match_number">2</stringProp>
               </BoundaryExtractor>
-              <hashTree />
+              <hashTree/>
               <BoundaryExtractor guiclass="BoundaryExtractorGui" testclass="BoundaryExtractor" testname="__fp3" enabled="true">
                 <stringProp name="BoundaryExtractor.useHeaders">false</stringProp>
                 <stringProp name="BoundaryExtractor.refname">__fp3</stringProp>
-                <stringProp name="BoundaryExtractor.lboundary">"__fp" value="</stringProp>
-                <stringProp name="BoundaryExtractor.rboundary">"</stringProp>
+                <stringProp name="BoundaryExtractor.lboundary">&quot;__fp&quot; value=&quot;</stringProp>
+                <stringProp name="BoundaryExtractor.rboundary">&quot;</stringProp>
                 <stringProp name="BoundaryExtractor.default">No__fpfound</stringProp>
                 <boolProp name="BoundaryExtractor.default_empty_value">false</boolProp>
                 <stringProp name="BoundaryExtractor.match_number">2</stringProp>
               </BoundaryExtractor>
-              <hashTree />
+              <hashTree/>
               <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
                 <collectionProp name="Asserion.test_strings">
                   <stringProp name="-1397214398">Welcome</stringProp>
                 </collectionProp>
-                <stringProp name="Assertion.custom_message" />
+                <stringProp name="Assertion.custom_message"></stringProp>
                 <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
                 <boolProp name="Assertion.assume_success">false</boolProp>
                 <intProp name="Assertion.test_type">2</intProp>
               </ResponseAssertion>
-              <hashTree />
+              <hashTree/>
             </hashTree>
           </hashTree>
           <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Think time">
@@ -1662,7 +1662,7 @@
               <stringProp name="ConstantTimer.delay">${constant}</stringProp>
               <stringProp name="RandomTimer.range">${deviation}</stringProp>
             </GaussianRandomTimer>
-            <hashTree />
+            <hashTree/>
           </hashTree>
           <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="03_02_00_Search_Product">
             <boolProp name="TransactionController.parent">true</boolProp>
@@ -1745,7 +1745,7 @@
                   </elementProp>
                   <elementProp name="sec-ch-ua" elementType="Header">
                     <stringProp name="Header.name">sec-ch-ua</stringProp>
-                    <stringProp name="Header.value">"Google Chrome";v="125", "Chromium";v="125", "Not.A/Brand";v="24"</stringProp>
+                    <stringProp name="Header.value">&quot;Google Chrome&quot;;v=&quot;125&quot;, &quot;Chromium&quot;;v=&quot;125&quot;, &quot;Not.A/Brand&quot;;v=&quot;24&quot;</stringProp>
                   </elementProp>
                   <elementProp name="sec-ch-ua-mobile" elementType="Header">
                     <stringProp name="Header.name">sec-ch-ua-mobile</stringProp>
@@ -1753,7 +1753,7 @@
                   </elementProp>
                   <elementProp name="sec-ch-ua-platform" elementType="Header">
                     <stringProp name="Header.name">sec-ch-ua-platform</stringProp>
-                    <stringProp name="Header.value">"Windows"</stringProp>
+                    <stringProp name="Header.value">&quot;Windows&quot;</stringProp>
                   </elementProp>
                   <elementProp name="Upgrade-Insecure-Requests" elementType="Header">
                     <stringProp name="Header.name">Upgrade-Insecure-Requests</stringProp>
@@ -1781,7 +1781,7 @@
                   </elementProp>
                 </collectionProp>
               </HeaderManager>
-              <hashTree />
+              <hashTree/>
             </hashTree>
             <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="03_02_02_Search_Product" enabled="true">
               <stringProp name="HTTPSampler.domain">${Base_URL}</stringProp>
@@ -1798,7 +1798,7 @@
                   <elementProp name="viewProduct" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">viewProduct</stringProp>
-                    <stringProp name="Argument.value" />
+                    <stringProp name="Argument.value"></stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
@@ -1841,7 +1841,7 @@
                   </elementProp>
                   <elementProp name="sec-ch-ua" elementType="Header">
                     <stringProp name="Header.name">sec-ch-ua</stringProp>
-                    <stringProp name="Header.value">"Google Chrome";v="125", "Chromium";v="125", "Not.A/Brand";v="24"</stringProp>
+                    <stringProp name="Header.value">&quot;Google Chrome&quot;;v=&quot;125&quot;, &quot;Chromium&quot;;v=&quot;125&quot;, &quot;Not.A/Brand&quot;;v=&quot;24&quot;</stringProp>
                   </elementProp>
                   <elementProp name="sec-ch-ua-mobile" elementType="Header">
                     <stringProp name="Header.name">sec-ch-ua-mobile</stringProp>
@@ -1849,7 +1849,7 @@
                   </elementProp>
                   <elementProp name="sec-ch-ua-platform" elementType="Header">
                     <stringProp name="Header.name">sec-ch-ua-platform</stringProp>
-                    <stringProp name="Header.value">"Windows"</stringProp>
+                    <stringProp name="Header.value">&quot;Windows&quot;</stringProp>
                   </elementProp>
                   <elementProp name="Upgrade-Insecure-Requests" elementType="Header">
                     <stringProp name="Header.name">Upgrade-Insecure-Requests</stringProp>
@@ -1869,17 +1869,17 @@
                   </elementProp>
                 </collectionProp>
               </HeaderManager>
-              <hashTree />
+              <hashTree/>
               <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
                 <collectionProp name="Asserion.test_strings">
                   <stringProp name="-1227986543">SearchContent</stringProp>
                 </collectionProp>
-                <stringProp name="Assertion.custom_message" />
+                <stringProp name="Assertion.custom_message"></stringProp>
                 <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
                 <boolProp name="Assertion.assume_success">false</boolProp>
                 <intProp name="Assertion.test_type">2</intProp>
               </ResponseAssertion>
-              <hashTree />
+              <hashTree/>
             </hashTree>
           </hashTree>
           <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Think time">
@@ -1892,7 +1892,7 @@
               <stringProp name="ConstantTimer.delay">${constant}</stringProp>
               <stringProp name="RandomTimer.range">${deviation}</stringProp>
             </GaussianRandomTimer>
-            <hashTree />
+            <hashTree/>
           </hashTree>
           <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="03_03_00_user_Search_CatagorySignout">
             <boolProp name="TransactionController.parent">true</boolProp>
@@ -1914,7 +1914,7 @@
                   <elementProp name="signoff" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">signoff</stringProp>
-                    <stringProp name="Argument.value" />
+                    <stringProp name="Argument.value"></stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
@@ -1950,7 +1950,7 @@
                   </elementProp>
                   <elementProp name="sec-ch-ua" elementType="Header">
                     <stringProp name="Header.name">sec-ch-ua</stringProp>
-                    <stringProp name="Header.value">"Google Chrome";v="125", "Chromium";v="125", "Not.A/Brand";v="24"</stringProp>
+                    <stringProp name="Header.value">&quot;Google Chrome&quot;;v=&quot;125&quot;, &quot;Chromium&quot;;v=&quot;125&quot;, &quot;Not.A/Brand&quot;;v=&quot;24&quot;</stringProp>
                   </elementProp>
                   <elementProp name="sec-ch-ua-mobile" elementType="Header">
                     <stringProp name="Header.name">sec-ch-ua-mobile</stringProp>
@@ -1958,7 +1958,7 @@
                   </elementProp>
                   <elementProp name="sec-ch-ua-platform" elementType="Header">
                     <stringProp name="Header.name">sec-ch-ua-platform</stringProp>
-                    <stringProp name="Header.value">"Windows"</stringProp>
+                    <stringProp name="Header.value">&quot;Windows&quot;</stringProp>
                   </elementProp>
                   <elementProp name="Upgrade-Insecure-Requests" elementType="Header">
                     <stringProp name="Header.name">Upgrade-Insecure-Requests</stringProp>
@@ -1978,7 +1978,7 @@
                   </elementProp>
                 </collectionProp>
               </HeaderManager>
-              <hashTree />
+              <hashTree/>
             </hashTree>
             <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="03_03_02_user_Search_CatagorySignout" enabled="true">
               <stringProp name="HTTPSampler.domain">${Base_URL}</stringProp>
@@ -1990,7 +1990,7 @@
               <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
               <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
-                <collectionProp name="Arguments.arguments" />
+                <collectionProp name="Arguments.arguments"/>
               </elementProp>
             </HTTPSamplerProxy>
             <hashTree>
@@ -2022,7 +2022,7 @@
                   </elementProp>
                   <elementProp name="sec-ch-ua" elementType="Header">
                     <stringProp name="Header.name">sec-ch-ua</stringProp>
-                    <stringProp name="Header.value">"Google Chrome";v="125", "Chromium";v="125", "Not.A/Brand";v="24"</stringProp>
+                    <stringProp name="Header.value">&quot;Google Chrome&quot;;v=&quot;125&quot;, &quot;Chromium&quot;;v=&quot;125&quot;, &quot;Not.A/Brand&quot;;v=&quot;24&quot;</stringProp>
                   </elementProp>
                   <elementProp name="sec-ch-ua-mobile" elementType="Header">
                     <stringProp name="Header.name">sec-ch-ua-mobile</stringProp>
@@ -2030,7 +2030,7 @@
                   </elementProp>
                   <elementProp name="sec-ch-ua-platform" elementType="Header">
                     <stringProp name="Header.name">sec-ch-ua-platform</stringProp>
-                    <stringProp name="Header.value">"Windows"</stringProp>
+                    <stringProp name="Header.value">&quot;Windows&quot;</stringProp>
                   </elementProp>
                   <elementProp name="Upgrade-Insecure-Requests" elementType="Header">
                     <stringProp name="Header.name">Upgrade-Insecure-Requests</stringProp>
@@ -2050,17 +2050,17 @@
                   </elementProp>
                 </collectionProp>
               </HeaderManager>
-              <hashTree />
+              <hashTree/>
               <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
                 <collectionProp name="Asserion.test_strings">
                   <stringProp name="286956243">generator</stringProp>
                 </collectionProp>
-                <stringProp name="Assertion.custom_message" />
+                <stringProp name="Assertion.custom_message"></stringProp>
                 <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
                 <boolProp name="Assertion.assume_success">false</boolProp>
                 <intProp name="Assertion.test_type">2</intProp>
               </ResponseAssertion>
-              <hashTree />
+              <hashTree/>
             </hashTree>
           </hashTree>
         </hashTree>
@@ -2094,7 +2094,7 @@
                   <elementProp name="signonForm" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">signonForm</stringProp>
-                    <stringProp name="Argument.value" />
+                    <stringProp name="Argument.value"></stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
@@ -2130,7 +2130,7 @@
                   </elementProp>
                   <elementProp name="sec-ch-ua" elementType="Header">
                     <stringProp name="Header.name">sec-ch-ua</stringProp>
-                    <stringProp name="Header.value">"Google Chrome";v="125", "Chromium";v="125", "Not.A/Brand";v="24"</stringProp>
+                    <stringProp name="Header.value">&quot;Google Chrome&quot;;v=&quot;125&quot;, &quot;Chromium&quot;;v=&quot;125&quot;, &quot;Not.A/Brand&quot;;v=&quot;24&quot;</stringProp>
                   </elementProp>
                   <elementProp name="sec-ch-ua-mobile" elementType="Header">
                     <stringProp name="Header.name">sec-ch-ua-mobile</stringProp>
@@ -2138,7 +2138,7 @@
                   </elementProp>
                   <elementProp name="sec-ch-ua-platform" elementType="Header">
                     <stringProp name="Header.name">sec-ch-ua-platform</stringProp>
-                    <stringProp name="Header.value">"Windows"</stringProp>
+                    <stringProp name="Header.value">&quot;Windows&quot;</stringProp>
                   </elementProp>
                   <elementProp name="Upgrade-Insecure-Requests" elementType="Header">
                     <stringProp name="Header.name">Upgrade-Insecure-Requests</stringProp>
@@ -2158,27 +2158,27 @@
                   </elementProp>
                 </collectionProp>
               </HeaderManager>
-              <hashTree />
+              <hashTree/>
               <BoundaryExtractor guiclass="BoundaryExtractorGui" testclass="BoundaryExtractor" testname="sourcePage4" enabled="true">
                 <stringProp name="BoundaryExtractor.useHeaders">false</stringProp>
                 <stringProp name="BoundaryExtractor.refname">sourcePage4</stringProp>
-                <stringProp name="BoundaryExtractor.lboundary">"_sourcePage" value="</stringProp>
-                <stringProp name="BoundaryExtractor.rboundary">"</stringProp>
+                <stringProp name="BoundaryExtractor.lboundary">&quot;_sourcePage&quot; value=&quot;</stringProp>
+                <stringProp name="BoundaryExtractor.rboundary">&quot;</stringProp>
                 <stringProp name="BoundaryExtractor.default">NosourcePagefound</stringProp>
                 <boolProp name="BoundaryExtractor.default_empty_value">false</boolProp>
                 <stringProp name="BoundaryExtractor.match_number">2</stringProp>
               </BoundaryExtractor>
-              <hashTree />
+              <hashTree/>
               <BoundaryExtractor guiclass="BoundaryExtractorGui" testclass="BoundaryExtractor" testname="__fp4" enabled="true">
                 <stringProp name="BoundaryExtractor.useHeaders">false</stringProp>
                 <stringProp name="BoundaryExtractor.refname">__fp4</stringProp>
-                <stringProp name="BoundaryExtractor.lboundary">"__fp" value="</stringProp>
-                <stringProp name="BoundaryExtractor.rboundary">"</stringProp>
+                <stringProp name="BoundaryExtractor.lboundary">&quot;__fp&quot; value=&quot;</stringProp>
+                <stringProp name="BoundaryExtractor.rboundary">&quot;</stringProp>
                 <stringProp name="BoundaryExtractor.default">No__fpfound</stringProp>
                 <boolProp name="BoundaryExtractor.default_empty_value">false</boolProp>
                 <stringProp name="BoundaryExtractor.match_number">2</stringProp>
               </BoundaryExtractor>
-              <hashTree />
+              <hashTree/>
             </hashTree>
             <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="04_01_02_user_Order_Booking_SignIn">
               <stringProp name="TestPlan.comments">Detected the start of a redirect chain</stringProp>
@@ -2263,7 +2263,7 @@
                   </elementProp>
                   <elementProp name="sec-ch-ua" elementType="Header">
                     <stringProp name="Header.name">sec-ch-ua</stringProp>
-                    <stringProp name="Header.value">"Google Chrome";v="125", "Chromium";v="125", "Not.A/Brand";v="24"</stringProp>
+                    <stringProp name="Header.value">&quot;Google Chrome&quot;;v=&quot;125&quot;, &quot;Chromium&quot;;v=&quot;125&quot;, &quot;Not.A/Brand&quot;;v=&quot;24&quot;</stringProp>
                   </elementProp>
                   <elementProp name="sec-ch-ua-mobile" elementType="Header">
                     <stringProp name="Header.name">sec-ch-ua-mobile</stringProp>
@@ -2271,7 +2271,7 @@
                   </elementProp>
                   <elementProp name="sec-ch-ua-platform" elementType="Header">
                     <stringProp name="Header.name">sec-ch-ua-platform</stringProp>
-                    <stringProp name="Header.value">"Windows"</stringProp>
+                    <stringProp name="Header.value">&quot;Windows&quot;</stringProp>
                   </elementProp>
                   <elementProp name="Upgrade-Insecure-Requests" elementType="Header">
                     <stringProp name="Header.name">Upgrade-Insecure-Requests</stringProp>
@@ -2299,7 +2299,7 @@
                   </elementProp>
                 </collectionProp>
               </HeaderManager>
-              <hashTree />
+              <hashTree/>
             </hashTree>
             <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="04_01_03_user_Order_Booking_SignIn">
               <stringProp name="HTTPSampler.domain">${Base_URL}</stringProp>
@@ -2312,7 +2312,7 @@
               <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
               <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
-                <collectionProp name="Arguments.arguments" />
+                <collectionProp name="Arguments.arguments"/>
               </elementProp>
             </HTTPSamplerProxy>
             <hashTree>
@@ -2344,7 +2344,7 @@
                   </elementProp>
                   <elementProp name="sec-ch-ua" elementType="Header">
                     <stringProp name="Header.name">sec-ch-ua</stringProp>
-                    <stringProp name="Header.value">"Google Chrome";v="125", "Chromium";v="125", "Not.A/Brand";v="24"</stringProp>
+                    <stringProp name="Header.value">&quot;Google Chrome&quot;;v=&quot;125&quot;, &quot;Chromium&quot;;v=&quot;125&quot;, &quot;Not.A/Brand&quot;;v=&quot;24&quot;</stringProp>
                   </elementProp>
                   <elementProp name="sec-ch-ua-mobile" elementType="Header">
                     <stringProp name="Header.name">sec-ch-ua-mobile</stringProp>
@@ -2352,7 +2352,7 @@
                   </elementProp>
                   <elementProp name="sec-ch-ua-platform" elementType="Header">
                     <stringProp name="Header.name">sec-ch-ua-platform</stringProp>
-                    <stringProp name="Header.value">"Windows"</stringProp>
+                    <stringProp name="Header.value">&quot;Windows&quot;</stringProp>
                   </elementProp>
                   <elementProp name="Upgrade-Insecure-Requests" elementType="Header">
                     <stringProp name="Header.name">Upgrade-Insecure-Requests</stringProp>
@@ -2376,27 +2376,27 @@
                   </elementProp>
                 </collectionProp>
               </HeaderManager>
-              <hashTree />
+              <hashTree/>
               <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="categoryId" enabled="true">
                 <stringProp name="RegexExtractor.useHeaders">false</stringProp>
                 <stringProp name="RegexExtractor.refname">categoryId</stringProp>
-                <stringProp name="RegexExtractor.regex">=&amp;amp;categoryId=(.*?)"&gt;</stringProp>
+                <stringProp name="RegexExtractor.regex">=&amp;amp;categoryId=(.*?)&quot;&gt;</stringProp>
                 <stringProp name="RegexExtractor.template">$1$</stringProp>
                 <stringProp name="RegexExtractor.default">NocategoryIdfound</stringProp>
                 <stringProp name="RegexExtractor.match_number">0</stringProp>
                 <boolProp name="RegexExtractor.default_empty_value">false</boolProp>
               </RegexExtractor>
-              <hashTree />
+              <hashTree/>
               <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
                 <collectionProp name="Asserion.test_strings">
                   <stringProp name="2122125902">StyleSheet</stringProp>
                 </collectionProp>
-                <stringProp name="Assertion.custom_message" />
+                <stringProp name="Assertion.custom_message"></stringProp>
                 <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
                 <boolProp name="Assertion.assume_success">false</boolProp>
                 <intProp name="Assertion.test_type">2</intProp>
               </ResponseAssertion>
-              <hashTree />
+              <hashTree/>
             </hashTree>
           </hashTree>
           <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Think time" enabled="true">
@@ -2409,7 +2409,7 @@
               <stringProp name="ConstantTimer.delay">${constant}</stringProp>
               <stringProp name="RandomTimer.range">${deviation}</stringProp>
             </GaussianRandomTimer>
-            <hashTree />
+            <hashTree/>
           </hashTree>
           <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="04_02_00_Select_catagory" enabled="true">
             <boolProp name="TransactionController.parent">true</boolProp>
@@ -2431,7 +2431,7 @@
                   <elementProp name="viewCategory" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">viewCategory</stringProp>
-                    <stringProp name="Argument.value" />
+                    <stringProp name="Argument.value"></stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
@@ -2474,7 +2474,7 @@
                   </elementProp>
                   <elementProp name="sec-ch-ua" elementType="Header">
                     <stringProp name="Header.name">sec-ch-ua</stringProp>
-                    <stringProp name="Header.value">"Google Chrome";v="125", "Chromium";v="125", "Not.A/Brand";v="24"</stringProp>
+                    <stringProp name="Header.value">&quot;Google Chrome&quot;;v=&quot;125&quot;, &quot;Chromium&quot;;v=&quot;125&quot;, &quot;Not.A/Brand&quot;;v=&quot;24&quot;</stringProp>
                   </elementProp>
                   <elementProp name="sec-ch-ua-mobile" elementType="Header">
                     <stringProp name="Header.name">sec-ch-ua-mobile</stringProp>
@@ -2482,7 +2482,7 @@
                   </elementProp>
                   <elementProp name="sec-ch-ua-platform" elementType="Header">
                     <stringProp name="Header.name">sec-ch-ua-platform</stringProp>
-                    <stringProp name="Header.value">"Windows"</stringProp>
+                    <stringProp name="Header.value">&quot;Windows&quot;</stringProp>
                   </elementProp>
                   <elementProp name="Upgrade-Insecure-Requests" elementType="Header">
                     <stringProp name="Header.name">Upgrade-Insecure-Requests</stringProp>
@@ -2502,27 +2502,27 @@
                   </elementProp>
                 </collectionProp>
               </HeaderManager>
-              <hashTree />
+              <hashTree/>
               <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="productId" enabled="true">
                 <stringProp name="RegexExtractor.useHeaders">false</stringProp>
                 <stringProp name="RegexExtractor.refname">productId</stringProp>
-                <stringProp name="RegexExtractor.regex">&amp;amp;productId=(.*?)"</stringProp>
+                <stringProp name="RegexExtractor.regex">&amp;amp;productId=(.*?)&quot;</stringProp>
                 <stringProp name="RegexExtractor.template">$1$</stringProp>
                 <stringProp name="RegexExtractor.default">NoproductIdfound</stringProp>
                 <stringProp name="RegexExtractor.match_number">1</stringProp>
                 <boolProp name="RegexExtractor.default_empty_value">false</boolProp>
               </RegexExtractor>
-              <hashTree />
+              <hashTree/>
               <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
                 <collectionProp name="Asserion.test_strings">
                   <stringProp name="-1875627748">HTML Tidy for Linux</stringProp>
                 </collectionProp>
-                <stringProp name="Assertion.custom_message" />
+                <stringProp name="Assertion.custom_message"></stringProp>
                 <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
                 <boolProp name="Assertion.assume_success">false</boolProp>
                 <intProp name="Assertion.test_type">2</intProp>
               </ResponseAssertion>
-              <hashTree />
+              <hashTree/>
             </hashTree>
           </hashTree>
           <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Think time" enabled="true">
@@ -2535,7 +2535,7 @@
               <stringProp name="ConstantTimer.delay">${constant}</stringProp>
               <stringProp name="RandomTimer.range">${deviation}</stringProp>
             </GaussianRandomTimer>
-            <hashTree />
+            <hashTree/>
           </hashTree>
           <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="04_03_00_Select_fish" enabled="true">
             <boolProp name="TransactionController.parent">true</boolProp>
@@ -2557,7 +2557,7 @@
                   <elementProp name="viewProduct" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">viewProduct</stringProp>
-                    <stringProp name="Argument.value" />
+                    <stringProp name="Argument.value"></stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
@@ -2600,7 +2600,7 @@
                   </elementProp>
                   <elementProp name="sec-ch-ua" elementType="Header">
                     <stringProp name="Header.name">sec-ch-ua</stringProp>
-                    <stringProp name="Header.value">"Google Chrome";v="125", "Chromium";v="125", "Not.A/Brand";v="24"</stringProp>
+                    <stringProp name="Header.value">&quot;Google Chrome&quot;;v=&quot;125&quot;, &quot;Chromium&quot;;v=&quot;125&quot;, &quot;Not.A/Brand&quot;;v=&quot;24&quot;</stringProp>
                   </elementProp>
                   <elementProp name="sec-ch-ua-mobile" elementType="Header">
                     <stringProp name="Header.name">sec-ch-ua-mobile</stringProp>
@@ -2608,7 +2608,7 @@
                   </elementProp>
                   <elementProp name="sec-ch-ua-platform" elementType="Header">
                     <stringProp name="Header.name">sec-ch-ua-platform</stringProp>
-                    <stringProp name="Header.value">"Windows"</stringProp>
+                    <stringProp name="Header.value">&quot;Windows&quot;</stringProp>
                   </elementProp>
                   <elementProp name="Upgrade-Insecure-Requests" elementType="Header">
                     <stringProp name="Header.name">Upgrade-Insecure-Requests</stringProp>
@@ -2628,27 +2628,27 @@
                   </elementProp>
                 </collectionProp>
               </HeaderManager>
-              <hashTree />
+              <hashTree/>
               <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="workingItemId" enabled="true">
                 <stringProp name="RegexExtractor.useHeaders">false</stringProp>
                 <stringProp name="RegexExtractor.refname">workingItemId</stringProp>
-                <stringProp name="RegexExtractor.regex">&amp;amp;workingItemId=(.*?)"</stringProp>
+                <stringProp name="RegexExtractor.regex">&amp;amp;workingItemId=(.*?)&quot;</stringProp>
                 <stringProp name="RegexExtractor.template">$1$</stringProp>
                 <stringProp name="RegexExtractor.default">NoworkingItemIdfound</stringProp>
                 <stringProp name="RegexExtractor.match_number">1</stringProp>
                 <boolProp name="RegexExtractor.default_empty_value">false</boolProp>
               </RegexExtractor>
-              <hashTree />
+              <hashTree/>
               <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
                 <collectionProp name="Asserion.test_strings">
                   <stringProp name="2158168">FISH</stringProp>
                 </collectionProp>
-                <stringProp name="Assertion.custom_message" />
+                <stringProp name="Assertion.custom_message"></stringProp>
                 <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
                 <boolProp name="Assertion.assume_success">false</boolProp>
                 <intProp name="Assertion.test_type">2</intProp>
               </ResponseAssertion>
-              <hashTree />
+              <hashTree/>
             </hashTree>
           </hashTree>
           <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Think time" enabled="true">
@@ -2661,7 +2661,7 @@
               <stringProp name="ConstantTimer.delay">${constant}</stringProp>
               <stringProp name="RandomTimer.range">${deviation}</stringProp>
             </GaussianRandomTimer>
-            <hashTree />
+            <hashTree/>
           </hashTree>
           <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="04_04_00_Add_to_cart" enabled="true">
             <boolProp name="TransactionController.parent">true</boolProp>
@@ -2682,7 +2682,7 @@
                   <elementProp name="addItemToCart" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">addItemToCart</stringProp>
-                    <stringProp name="Argument.value" />
+                    <stringProp name="Argument.value"></stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
@@ -2725,7 +2725,7 @@
                   </elementProp>
                   <elementProp name="sec-ch-ua" elementType="Header">
                     <stringProp name="Header.name">sec-ch-ua</stringProp>
-                    <stringProp name="Header.value">"Google Chrome";v="125", "Chromium";v="125", "Not.A/Brand";v="24"</stringProp>
+                    <stringProp name="Header.value">&quot;Google Chrome&quot;;v=&quot;125&quot;, &quot;Chromium&quot;;v=&quot;125&quot;, &quot;Not.A/Brand&quot;;v=&quot;24&quot;</stringProp>
                   </elementProp>
                   <elementProp name="sec-ch-ua-mobile" elementType="Header">
                     <stringProp name="Header.name">sec-ch-ua-mobile</stringProp>
@@ -2733,7 +2733,7 @@
                   </elementProp>
                   <elementProp name="sec-ch-ua-platform" elementType="Header">
                     <stringProp name="Header.name">sec-ch-ua-platform</stringProp>
-                    <stringProp name="Header.value">"Windows"</stringProp>
+                    <stringProp name="Header.value">&quot;Windows&quot;</stringProp>
                   </elementProp>
                   <elementProp name="Upgrade-Insecure-Requests" elementType="Header">
                     <stringProp name="Header.name">Upgrade-Insecure-Requests</stringProp>
@@ -2753,17 +2753,17 @@
                   </elementProp>
                 </collectionProp>
               </HeaderManager>
-              <hashTree />
+              <hashTree/>
               <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
                 <collectionProp name="Asserion.test_strings">
                   <stringProp name="-2040128046">Cache-Control</stringProp>
                 </collectionProp>
-                <stringProp name="Assertion.custom_message" />
+                <stringProp name="Assertion.custom_message"></stringProp>
                 <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
                 <boolProp name="Assertion.assume_success">false</boolProp>
                 <intProp name="Assertion.test_type">2</intProp>
               </ResponseAssertion>
-              <hashTree />
+              <hashTree/>
             </hashTree>
           </hashTree>
           <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Think time" enabled="true">
@@ -2776,7 +2776,7 @@
               <stringProp name="ConstantTimer.delay">${constant}</stringProp>
               <stringProp name="RandomTimer.range">${deviation}</stringProp>
             </GaussianRandomTimer>
-            <hashTree />
+            <hashTree/>
           </hashTree>
           <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="04_05_00_Proceed_to_Checkout" enabled="true">
             <boolProp name="TransactionController.parent">true</boolProp>
@@ -2797,7 +2797,7 @@
                   <elementProp name="newOrderForm" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">newOrderForm</stringProp>
-                    <stringProp name="Argument.value" />
+                    <stringProp name="Argument.value"></stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
@@ -2833,7 +2833,7 @@
                   </elementProp>
                   <elementProp name="sec-ch-ua" elementType="Header">
                     <stringProp name="Header.name">sec-ch-ua</stringProp>
-                    <stringProp name="Header.value">"Google Chrome";v="125", "Chromium";v="125", "Not.A/Brand";v="24"</stringProp>
+                    <stringProp name="Header.value">&quot;Google Chrome&quot;;v=&quot;125&quot;, &quot;Chromium&quot;;v=&quot;125&quot;, &quot;Not.A/Brand&quot;;v=&quot;24&quot;</stringProp>
                   </elementProp>
                   <elementProp name="sec-ch-ua-mobile" elementType="Header">
                     <stringProp name="Header.name">sec-ch-ua-mobile</stringProp>
@@ -2841,7 +2841,7 @@
                   </elementProp>
                   <elementProp name="sec-ch-ua-platform" elementType="Header">
                     <stringProp name="Header.name">sec-ch-ua-platform</stringProp>
-                    <stringProp name="Header.value">"Windows"</stringProp>
+                    <stringProp name="Header.value">&quot;Windows&quot;</stringProp>
                   </elementProp>
                   <elementProp name="Upgrade-Insecure-Requests" elementType="Header">
                     <stringProp name="Header.name">Upgrade-Insecure-Requests</stringProp>
@@ -2861,37 +2861,37 @@
                   </elementProp>
                 </collectionProp>
               </HeaderManager>
-              <hashTree />
+              <hashTree/>
               <BoundaryExtractor guiclass="BoundaryExtractorGui" testclass="BoundaryExtractor" testname="sourcePage5" enabled="true">
                 <stringProp name="BoundaryExtractor.useHeaders">false</stringProp>
                 <stringProp name="BoundaryExtractor.refname">sourcePage5</stringProp>
-                <stringProp name="BoundaryExtractor.lboundary">"_sourcePage" value="</stringProp>
-                <stringProp name="BoundaryExtractor.rboundary">"</stringProp>
+                <stringProp name="BoundaryExtractor.lboundary">&quot;_sourcePage&quot; value=&quot;</stringProp>
+                <stringProp name="BoundaryExtractor.rboundary">&quot;</stringProp>
                 <stringProp name="BoundaryExtractor.default">NosourcePagefound</stringProp>
                 <boolProp name="BoundaryExtractor.default_empty_value">false</boolProp>
                 <stringProp name="BoundaryExtractor.match_number">2</stringProp>
               </BoundaryExtractor>
-              <hashTree />
+              <hashTree/>
               <BoundaryExtractor guiclass="BoundaryExtractorGui" testclass="BoundaryExtractor" testname="__fp5" enabled="true">
                 <stringProp name="BoundaryExtractor.useHeaders">false</stringProp>
                 <stringProp name="BoundaryExtractor.refname">__fp1</stringProp>
-                <stringProp name="BoundaryExtractor.lboundary">"__fp" value="</stringProp>
-                <stringProp name="BoundaryExtractor.rboundary">"</stringProp>
+                <stringProp name="BoundaryExtractor.lboundary">&quot;__fp&quot; value=&quot;</stringProp>
+                <stringProp name="BoundaryExtractor.rboundary">&quot;</stringProp>
                 <stringProp name="BoundaryExtractor.default">No__fpfound</stringProp>
                 <boolProp name="BoundaryExtractor.default_empty_value">false</boolProp>
                 <stringProp name="BoundaryExtractor.match_number">2</stringProp>
               </BoundaryExtractor>
-              <hashTree />
+              <hashTree/>
               <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
                 <collectionProp name="Asserion.test_strings">
                   <stringProp name="-33736649">JPetStore Demo</stringProp>
                 </collectionProp>
-                <stringProp name="Assertion.custom_message" />
+                <stringProp name="Assertion.custom_message"></stringProp>
                 <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
                 <boolProp name="Assertion.assume_success">false</boolProp>
                 <intProp name="Assertion.test_type">2</intProp>
               </ResponseAssertion>
-              <hashTree />
+              <hashTree/>
             </hashTree>
           </hashTree>
           <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Think time" enabled="true">
@@ -2904,7 +2904,7 @@
               <stringProp name="ConstantTimer.delay">${constant}</stringProp>
               <stringProp name="RandomTimer.range">${deviation}</stringProp>
             </GaussianRandomTimer>
-            <hashTree />
+            <hashTree/>
           </hashTree>
           <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="04_06_00_Payment" enabled="true">
             <boolProp name="TransactionController.parent">true</boolProp>
@@ -2968,7 +2968,7 @@
                   <elementProp name="order.billAddress2" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">order.billAddress2</stringProp>
-                    <stringProp name="Argument.value" />
+                    <stringProp name="Argument.value"></stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
@@ -3057,7 +3057,7 @@
                   </elementProp>
                   <elementProp name="sec-ch-ua" elementType="Header">
                     <stringProp name="Header.name">sec-ch-ua</stringProp>
-                    <stringProp name="Header.value">"Google Chrome";v="125", "Chromium";v="125", "Not.A/Brand";v="24"</stringProp>
+                    <stringProp name="Header.value">&quot;Google Chrome&quot;;v=&quot;125&quot;, &quot;Chromium&quot;;v=&quot;125&quot;, &quot;Not.A/Brand&quot;;v=&quot;24&quot;</stringProp>
                   </elementProp>
                   <elementProp name="sec-ch-ua-mobile" elementType="Header">
                     <stringProp name="Header.name">sec-ch-ua-mobile</stringProp>
@@ -3065,7 +3065,7 @@
                   </elementProp>
                   <elementProp name="sec-ch-ua-platform" elementType="Header">
                     <stringProp name="Header.name">sec-ch-ua-platform</stringProp>
-                    <stringProp name="Header.value">"Windows"</stringProp>
+                    <stringProp name="Header.value">&quot;Windows&quot;</stringProp>
                   </elementProp>
                   <elementProp name="Upgrade-Insecure-Requests" elementType="Header">
                     <stringProp name="Header.name">Upgrade-Insecure-Requests</stringProp>
@@ -3093,7 +3093,7 @@
                   </elementProp>
                 </collectionProp>
               </HeaderManager>
-              <hashTree />
+              <hashTree/>
             </hashTree>
             <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="04_06_02_Payment" enabled="true">
               <stringProp name="HTTPSampler.domain">${Base_URL}</stringProp>
@@ -3110,7 +3110,7 @@
                   <elementProp name="newOrder" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">newOrder</stringProp>
-                    <stringProp name="Argument.value" />
+                    <stringProp name="Argument.value"></stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
@@ -3153,7 +3153,7 @@
                   </elementProp>
                   <elementProp name="sec-ch-ua" elementType="Header">
                     <stringProp name="Header.name">sec-ch-ua</stringProp>
-                    <stringProp name="Header.value">"Google Chrome";v="125", "Chromium";v="125", "Not.A/Brand";v="24"</stringProp>
+                    <stringProp name="Header.value">&quot;Google Chrome&quot;;v=&quot;125&quot;, &quot;Chromium&quot;;v=&quot;125&quot;, &quot;Not.A/Brand&quot;;v=&quot;24&quot;</stringProp>
                   </elementProp>
                   <elementProp name="sec-ch-ua-mobile" elementType="Header">
                     <stringProp name="Header.name">sec-ch-ua-mobile</stringProp>
@@ -3161,7 +3161,7 @@
                   </elementProp>
                   <elementProp name="sec-ch-ua-platform" elementType="Header">
                     <stringProp name="Header.name">sec-ch-ua-platform</stringProp>
-                    <stringProp name="Header.value">"Windows"</stringProp>
+                    <stringProp name="Header.value">&quot;Windows&quot;</stringProp>
                   </elementProp>
                   <elementProp name="Upgrade-Insecure-Requests" elementType="Header">
                     <stringProp name="Header.name">Upgrade-Insecure-Requests</stringProp>
@@ -3181,17 +3181,17 @@
                   </elementProp>
                 </collectionProp>
               </HeaderManager>
-              <hashTree />
+              <hashTree/>
               <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
                 <collectionProp name="Asserion.test_strings">
                   <stringProp name="317958345">www.w3.org</stringProp>
                 </collectionProp>
-                <stringProp name="Assertion.custom_message" />
+                <stringProp name="Assertion.custom_message"></stringProp>
                 <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
                 <boolProp name="Assertion.assume_success">false</boolProp>
                 <intProp name="Assertion.test_type">2</intProp>
               </ResponseAssertion>
-              <hashTree />
+              <hashTree/>
             </hashTree>
           </hashTree>
           <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Think time" enabled="true">
@@ -3204,7 +3204,7 @@
               <stringProp name="ConstantTimer.delay">${constant}</stringProp>
               <stringProp name="RandomTimer.range">${deviation}</stringProp>
             </GaussianRandomTimer>
-            <hashTree />
+            <hashTree/>
           </hashTree>
           <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="04_07_00_user_Order_Booking_Signout" enabled="true">
             <boolProp name="TransactionController.parent">true</boolProp>
@@ -3226,7 +3226,7 @@
                   <elementProp name="signoff" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">signoff</stringProp>
-                    <stringProp name="Argument.value" />
+                    <stringProp name="Argument.value"></stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
@@ -3262,7 +3262,7 @@
                   </elementProp>
                   <elementProp name="sec-ch-ua" elementType="Header">
                     <stringProp name="Header.name">sec-ch-ua</stringProp>
-                    <stringProp name="Header.value">"Google Chrome";v="125", "Chromium";v="125", "Not.A/Brand";v="24"</stringProp>
+                    <stringProp name="Header.value">&quot;Google Chrome&quot;;v=&quot;125&quot;, &quot;Chromium&quot;;v=&quot;125&quot;, &quot;Not.A/Brand&quot;;v=&quot;24&quot;</stringProp>
                   </elementProp>
                   <elementProp name="sec-ch-ua-mobile" elementType="Header">
                     <stringProp name="Header.name">sec-ch-ua-mobile</stringProp>
@@ -3270,7 +3270,7 @@
                   </elementProp>
                   <elementProp name="sec-ch-ua-platform" elementType="Header">
                     <stringProp name="Header.name">sec-ch-ua-platform</stringProp>
-                    <stringProp name="Header.value">"Windows"</stringProp>
+                    <stringProp name="Header.value">&quot;Windows&quot;</stringProp>
                   </elementProp>
                   <elementProp name="Upgrade-Insecure-Requests" elementType="Header">
                     <stringProp name="Header.name">Upgrade-Insecure-Requests</stringProp>
@@ -3290,7 +3290,7 @@
                   </elementProp>
                 </collectionProp>
               </HeaderManager>
-              <hashTree />
+              <hashTree/>
             </hashTree>
             <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="04_07_02_user_Order_Booking_Signout" enabled="true">
               <stringProp name="HTTPSampler.domain">${Base_URL}</stringProp>
@@ -3303,7 +3303,7 @@
               <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
               <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
-                <collectionProp name="Arguments.arguments" />
+                <collectionProp name="Arguments.arguments"/>
               </elementProp>
             </HTTPSamplerProxy>
             <hashTree>
@@ -3335,7 +3335,7 @@
                   </elementProp>
                   <elementProp name="sec-ch-ua" elementType="Header">
                     <stringProp name="Header.name">sec-ch-ua</stringProp>
-                    <stringProp name="Header.value">"Google Chrome";v="125", "Chromium";v="125", "Not.A/Brand";v="24"</stringProp>
+                    <stringProp name="Header.value">&quot;Google Chrome&quot;;v=&quot;125&quot;, &quot;Chromium&quot;;v=&quot;125&quot;, &quot;Not.A/Brand&quot;;v=&quot;24&quot;</stringProp>
                   </elementProp>
                   <elementProp name="sec-ch-ua-mobile" elementType="Header">
                     <stringProp name="Header.name">sec-ch-ua-mobile</stringProp>
@@ -3343,7 +3343,7 @@
                   </elementProp>
                   <elementProp name="sec-ch-ua-platform" elementType="Header">
                     <stringProp name="Header.name">sec-ch-ua-platform</stringProp>
-                    <stringProp name="Header.value">"Windows"</stringProp>
+                    <stringProp name="Header.value">&quot;Windows&quot;</stringProp>
                   </elementProp>
                   <elementProp name="Upgrade-Insecure-Requests" elementType="Header">
                     <stringProp name="Header.name">Upgrade-Insecure-Requests</stringProp>
@@ -3363,17 +3363,17 @@
                   </elementProp>
                 </collectionProp>
               </HeaderManager>
-              <hashTree />
+              <hashTree/>
               <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
                 <collectionProp name="Asserion.test_strings">
                   <stringProp name="-920705616">DOCTYPE html PUBLIC</stringProp>
                 </collectionProp>
-                <stringProp name="Assertion.custom_message" />
+                <stringProp name="Assertion.custom_message"></stringProp>
                 <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
                 <boolProp name="Assertion.assume_success">false</boolProp>
                 <intProp name="Assertion.test_type">2</intProp>
               </ResponseAssertion>
-              <hashTree />
+              <hashTree/>
             </hashTree>
           </hashTree>
         </hashTree>
@@ -3422,14 +3422,14 @@
               </elementProp>
               <elementProp name="eventTags" elementType="Argument">
                 <stringProp name="Argument.name">eventTags</stringProp>
-                <stringProp name="Argument.value" />
+                <stringProp name="Argument.value"></stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
             </collectionProp>
           </elementProp>
           <stringProp name="classname">org.apache.jmeter.visualizers.backend.influxdb.InfluxdbBackendListenerClient</stringProp>
         </BackendListener>
-        <hashTree />
+        <hashTree/>
       </hashTree>
     </hashTree>
   </hashTree>
