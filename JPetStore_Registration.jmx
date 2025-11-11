@@ -74,7 +74,7 @@
             <stringProp name="HTTPSampler.domain">${Base_URL}</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
-            <stringProp name="HTTPSampler.path">/</stringProp>
+            <stringProp name="HTTPSampler.path">/get</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <stringProp name="HTTPSampler.method">GET</stringProp>
             <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
@@ -174,7 +174,7 @@
             <stringProp name="HTTPSampler.domain">${Base_URL}</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
-            <stringProp name="HTTPSampler.path">/actions/Catalog.action</stringProp>
+            <stringProp name="HTTPSampler.path">/get</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <stringProp name="HTTPSampler.method">GET</stringProp>
             <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
@@ -295,7 +295,7 @@
               <stringProp name="HTTPSampler.domain">${Base_URL}</stringProp>
               <stringProp name="HTTPSampler.port">443</stringProp>
               <stringProp name="HTTPSampler.protocol">https</stringProp>
-              <stringProp name="HTTPSampler.path">/actions/Account.action;jsessionid=${jSessionId}</stringProp>
+              <stringProp name="HTTPSampler.path">/get</stringProp>
               <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
               <stringProp name="HTTPSampler.method">GET</stringProp>
               <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
@@ -403,7 +403,7 @@
               <stringProp name="HTTPSampler.domain">${Base_URL}</stringProp>
               <stringProp name="HTTPSampler.port">443</stringProp>
               <stringProp name="HTTPSampler.protocol">https</stringProp>
-              <stringProp name="HTTPSampler.path">/actions/Account.action</stringProp>
+              <stringProp name="HTTPSampler.path">/get</stringProp>
               <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
               <stringProp name="HTTPSampler.method">GET</stringProp>
               <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
@@ -505,7 +505,7 @@
               <stringProp name="HTTPSampler.port">443</stringProp>
               <stringProp name="HTTPSampler.protocol">https</stringProp>
               <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
-              <stringProp name="HTTPSampler.path">/actions/Account.action</stringProp>
+              <stringProp name="HTTPSampler.path">/get</stringProp>
               <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
               <stringProp name="HTTPSampler.method">POST</stringProp>
               <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
@@ -717,7 +717,7 @@
               <stringProp name="HTTPSampler.port">443</stringProp>
               <stringProp name="HTTPSampler.protocol">https</stringProp>
               <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
-              <stringProp name="HTTPSampler.path">/actions/Catalog.action</stringProp>
+              <stringProp name="HTTPSampler.path">/get</stringProp>
               <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
               <stringProp name="HTTPSampler.method">GET</stringProp>
               <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
@@ -822,7 +822,7 @@
               <stringProp name="HTTPSampler.port">443</stringProp>
               <stringProp name="HTTPSampler.protocol">https</stringProp>
               <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
-              <stringProp name="HTTPSampler.path">/actions/Account.action</stringProp>
+              <stringProp name="HTTPSampler.path">/get</stringProp>
               <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
               <stringProp name="HTTPSampler.method">GET</stringProp>
               <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
@@ -924,7 +924,7 @@
               <stringProp name="HTTPSampler.port">443</stringProp>
               <stringProp name="HTTPSampler.protocol">https</stringProp>
               <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
-              <stringProp name="HTTPSampler.path">/actions/Account.action</stringProp>
+              <stringProp name="HTTPSampler.path">/get</stringProp>
               <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
               <stringProp name="HTTPSampler.method">POST</stringProp>
               <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
@@ -1045,7 +1045,7 @@
               <stringProp name="HTTPSampler.port">443</stringProp>
               <stringProp name="HTTPSampler.protocol">https</stringProp>
               <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
-              <stringProp name="HTTPSampler.path">/actions/Catalog.action</stringProp>
+              <stringProp name="HTTPSampler.path">/get</stringProp>
               <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
               <stringProp name="HTTPSampler.method">GET</stringProp>
               <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
@@ -1151,7 +1151,7 @@
               <stringProp name="HTTPSampler.port">443</stringProp>
               <stringProp name="HTTPSampler.protocol">https</stringProp>
               <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
-              <stringProp name="HTTPSampler.path">/actions/Account.action</stringProp>
+              <stringProp name="HTTPSampler.path">/get</stringProp>
               <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
               <stringProp name="HTTPSampler.method">GET</stringProp>
               <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
@@ -1232,7 +1232,7 @@
               <stringProp name="HTTPSampler.port">443</stringProp>
               <stringProp name="HTTPSampler.protocol">https</stringProp>
               <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
-              <stringProp name="HTTPSampler.path">/actions/Catalog.action</stringProp>
+              <stringProp name="HTTPSampler.path">/get</stringProp>
               <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
               <stringProp name="HTTPSampler.method">GET</stringProp>
               <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
@@ -1332,7 +1332,7 @@
               <stringProp name="HTTPSampler.domain">${Base_URL}</stringProp>
               <stringProp name="HTTPSampler.port">443</stringProp>
               <stringProp name="HTTPSampler.protocol">https</stringProp>
-              <stringProp name="HTTPSampler.path">/actions/Account.action;jsessionid=${jSessionId}</stringProp>
+              <stringProp name="HTTPSampler.path">/get</stringProp>
               <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
               <stringProp name="HTTPSampler.method">GET</stringProp>
               <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
@@ -1434,7 +1434,7 @@
               <stringProp name="HTTPSampler.port">443</stringProp>
               <stringProp name="HTTPSampler.protocol">https</stringProp>
               <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
-              <stringProp name="HTTPSampler.path">/actions/Account.action</stringProp>
+              <stringProp name="HTTPSampler.path">/get</stringProp>
               <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
               <stringProp name="HTTPSampler.method">POST</stringProp>
               <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
@@ -1555,7 +1555,7 @@
               <stringProp name="HTTPSampler.port">443</stringProp>
               <stringProp name="HTTPSampler.protocol">https</stringProp>
               <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
-              <stringProp name="HTTPSampler.path">/actions/Catalog.action</stringProp>
+              <stringProp name="HTTPSampler.path">/get</stringProp>
               <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
               <stringProp name="HTTPSampler.method">GET</stringProp>
               <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
@@ -1680,7 +1680,7 @@
               <stringProp name="HTTPSampler.port">443</stringProp>
               <stringProp name="HTTPSampler.protocol">https</stringProp>
               <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
-              <stringProp name="HTTPSampler.path">/actions/Catalog.action</stringProp>
+              <stringProp name="HTTPSampler.path">/get</stringProp>
               <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
               <stringProp name="HTTPSampler.method">POST</stringProp>
               <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
@@ -1794,7 +1794,7 @@
               <stringProp name="HTTPSampler.port">443</stringProp>
               <stringProp name="HTTPSampler.protocol">https</stringProp>
               <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
-              <stringProp name="HTTPSampler.path">/actions/Catalog.action</stringProp>
+              <stringProp name="HTTPSampler.path">/get</stringProp>
               <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
               <stringProp name="HTTPSampler.method">GET</stringProp>
               <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
@@ -1910,7 +1910,7 @@
               <stringProp name="HTTPSampler.domain">${Base_URL}</stringProp>
               <stringProp name="HTTPSampler.port">443</stringProp>
               <stringProp name="HTTPSampler.protocol">https</stringProp>
-              <stringProp name="HTTPSampler.path">/actions/Account.action</stringProp>
+              <stringProp name="HTTPSampler.path">/get</stringProp>
               <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
               <stringProp name="HTTPSampler.method">GET</stringProp>
               <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
@@ -1990,7 +1990,7 @@
               <stringProp name="HTTPSampler.domain">${Base_URL}</stringProp>
               <stringProp name="HTTPSampler.port">443</stringProp>
               <stringProp name="HTTPSampler.protocol">https</stringProp>
-              <stringProp name="HTTPSampler.path">/actions/Catalog.action</stringProp>
+              <stringProp name="HTTPSampler.path">/get</stringProp>
               <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
               <stringProp name="HTTPSampler.method">GET</stringProp>
               <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
@@ -2090,7 +2090,7 @@
               <stringProp name="HTTPSampler.domain">${Base_URL}</stringProp>
               <stringProp name="HTTPSampler.port">443</stringProp>
               <stringProp name="HTTPSampler.protocol">https</stringProp>
-              <stringProp name="HTTPSampler.path">/actions/Account.action;jsessionid=${jSessionId}</stringProp>
+              <stringProp name="HTTPSampler.path">/get</stringProp>
               <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
               <stringProp name="HTTPSampler.method">GET</stringProp>
               <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
@@ -2191,7 +2191,7 @@
               <stringProp name="HTTPSampler.domain">${Base_URL}</stringProp>
               <stringProp name="HTTPSampler.port">443</stringProp>
               <stringProp name="HTTPSampler.protocol">https</stringProp>
-              <stringProp name="HTTPSampler.path">/actions/Account.action</stringProp>
+              <stringProp name="HTTPSampler.path">/get</stringProp>
               <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
               <stringProp name="HTTPSampler.method">POST</stringProp>
               <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
@@ -2312,7 +2312,7 @@
               <stringProp name="HTTPSampler.port">443</stringProp>
               <stringProp name="HTTPSampler.protocol">https</stringProp>
               <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
-              <stringProp name="HTTPSampler.path">/actions/Catalog.action</stringProp>
+              <stringProp name="HTTPSampler.path">/get</stringProp>
               <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
               <stringProp name="HTTPSampler.method">GET</stringProp>
               <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
@@ -2427,7 +2427,7 @@
               <stringProp name="HTTPSampler.port">443</stringProp>
               <stringProp name="HTTPSampler.protocol">https</stringProp>
               <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
-              <stringProp name="HTTPSampler.path">/actions/Catalog.action</stringProp>
+              <stringProp name="HTTPSampler.path">/get</stringProp>
               <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
               <stringProp name="HTTPSampler.method">GET</stringProp>
               <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
@@ -2553,7 +2553,7 @@
               <stringProp name="HTTPSampler.port">443</stringProp>
               <stringProp name="HTTPSampler.protocol">https</stringProp>
               <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
-              <stringProp name="HTTPSampler.path">/actions/Catalog.action</stringProp>
+              <stringProp name="HTTPSampler.path">/get</stringProp>
               <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
               <stringProp name="HTTPSampler.method">GET</stringProp>
               <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
@@ -2678,7 +2678,7 @@
               <stringProp name="HTTPSampler.domain">${Base_URL}</stringProp>
               <stringProp name="HTTPSampler.port">443</stringProp>
               <stringProp name="HTTPSampler.protocol">https</stringProp>
-              <stringProp name="HTTPSampler.path">/actions/Cart.action</stringProp>
+              <stringProp name="HTTPSampler.path">/get</stringProp>
               <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
               <stringProp name="HTTPSampler.method">GET</stringProp>
               <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
@@ -2793,7 +2793,7 @@
               <stringProp name="HTTPSampler.domain">${Base_URL}</stringProp>
               <stringProp name="HTTPSampler.port">443</stringProp>
               <stringProp name="HTTPSampler.protocol">https</stringProp>
-              <stringProp name="HTTPSampler.path">/actions/Order.action</stringProp>
+              <stringProp name="HTTPSampler.path">/get</stringProp>
               <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
               <stringProp name="HTTPSampler.method">GET</stringProp>
               <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
@@ -2922,7 +2922,7 @@
               <stringProp name="HTTPSampler.port">443</stringProp>
               <stringProp name="HTTPSampler.protocol">https</stringProp>
               <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
-              <stringProp name="HTTPSampler.path">/actions/Order.action</stringProp>
+              <stringProp name="HTTPSampler.path">/get</stringProp>
               <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
               <stringProp name="HTTPSampler.method">POST</stringProp>
               <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
@@ -3106,7 +3106,7 @@
               <stringProp name="HTTPSampler.port">443</stringProp>
               <stringProp name="HTTPSampler.protocol">https</stringProp>
               <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
-              <stringProp name="HTTPSampler.path">/actions/Order.action</stringProp>
+              <stringProp name="HTTPSampler.path">/get</stringProp>
               <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
               <stringProp name="HTTPSampler.method">GET</stringProp>
               <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
@@ -3222,7 +3222,7 @@
               <stringProp name="HTTPSampler.domain">${Base_URL}</stringProp>
               <stringProp name="HTTPSampler.port">443</stringProp>
               <stringProp name="HTTPSampler.protocol">https</stringProp>
-              <stringProp name="HTTPSampler.path">/actions/Account.action</stringProp>
+              <stringProp name="HTTPSampler.path">/get</stringProp>
               <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
               <stringProp name="HTTPSampler.method">GET</stringProp>
               <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
@@ -3303,7 +3303,7 @@
               <stringProp name="HTTPSampler.port">443</stringProp>
               <stringProp name="HTTPSampler.protocol">https</stringProp>
               <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
-              <stringProp name="HTTPSampler.path">/actions/Catalog.action</stringProp>
+              <stringProp name="HTTPSampler.path">/get</stringProp>
               <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
               <stringProp name="HTTPSampler.method">GET</stringProp>
               <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
