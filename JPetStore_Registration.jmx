@@ -3386,49 +3386,6 @@
         <hashTree />
       </hashTree>
     </hashTree>
-  <ConfigTestElement guiclass="ArgumentsPanel" testclass="ConfigTestElement" testname="User Defined Variables" enabled="true"><elementProp name="Arguments" elementType="Arguments"><collectionProp name="Arguments.arguments"><elementProp name="Base_URL" elementType="Argument"><stringProp name="Argument.name">Base_URL</stringProp><stringProp name="Argument.value">https://httpbin.org</stringProp></elementProp></collectionProp></elementProp></ConfigTestElement><hashTree />  <BackendListener guiclass="BackendListenerGui" testclass="BackendListener" testname="InfluxDB 2.x Backend Listener" enabled="true">
-    <stringProp name="classname">org.apache.jmeter.visualizers.backend.influxdb.InfluxDBBackendListenerClient</stringProp>
-    <elementProp name="arguments" elementType="Arguments">
-      <collectionProp name="Arguments.arguments">
-        <elementProp name="influxdbUrl" elementType="Argument">
-          <stringProp name="Argument.name">influxdbUrl</stringProp>
-          <stringProp name="Argument.value">http://influxdb.monitoring.svc.cluster.local:8086</stringProp>
-        </elementProp>
-        <elementProp name="influxdbToken" elementType="Argument">
-          <stringProp name="Argument.name">influxdbToken</stringProp>
-          <stringProp name="Argument.value">token</stringProp>
-        </elementProp>
-        <elementProp name="influxdbOrg" elementType="Argument">
-          <stringProp name="Argument.name">influxdbOrg</stringProp>
-          <stringProp name="Argument.value">jmeter_org</stringProp>
-        </elementProp>
-        <elementProp name="influxdbBucket" elementType="Argument">
-          <stringProp name="Argument.name">influxdbBucket</stringProp>
-          <stringProp name="Argument.value">jmeter_bucket</stringProp>
-        </elementProp>
-        <elementProp name="testTitle" elementType="Argument">
-          <stringProp name="Argument.name">testTitle</stringProp>
-          <stringProp name="Argument.value">JPetStore Load Test</stringProp>
-        </elementProp>
-        <elementProp name="samplersRegex" elementType="Argument">
-          <stringProp name="Argument.name">samplersRegex</stringProp>
-          <stringProp name="Argument.value">.*</stringProp>
-        </elementProp>
-        <elementProp name="summaryOnly" elementType="Argument">
-          <stringProp name="Argument.name">summaryOnly</stringProp>
-          <stringProp name="Argument.value">false</stringProp>
-        </elementProp>
-        <elementProp name="application" elementType="Argument">
-          <stringProp name="Argument.name">application</stringProp>
-          <stringProp name="Argument.value">JPetStore</stringProp>
-        </elementProp>
-        <elementProp name="measurement" elementType="Argument">
-          <stringProp name="Argument.name">measurement</stringProp>
-          <stringProp name="Argument.value">jmeter</stringProp>
-        </elementProp>
-      </collectionProp>
-    </elementProp>
-  </BackendListener>
-  <hashTree/>
+  <ConfigTestElement guiclass="ArgumentsPanel" testclass="ConfigTestElement" testname="User Defined Variables" enabled="true"><elementProp name="Arguments" elementType="Arguments"><collectionProp name="Arguments.arguments"><elementProp name="Base_URL" elementType="Argument"><stringProp name="Argument.name">Base_URL</stringProp><stringProp name="Argument.value">https://httpbin.org</stringProp></elementProp></collectionProp></elementProp></ConfigTestElement><hashTree />  
 </hashTree>
 </jmeterTestPlan>
