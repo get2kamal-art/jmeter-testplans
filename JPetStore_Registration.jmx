@@ -31,6 +31,7 @@
         <stringProp name="ThreadGroup.delay"/>
       </ThreadGroup>
       <hashTree>
+
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Home Page" enabled="true">
           <stringProp name="HTTPSampler.domain">${Base_URL}</stringProp>
           <stringProp name="HTTPSampler.port"/>
@@ -39,38 +40,50 @@
           <stringProp name="HTTPSampler.method">GET</stringProp>
         </HTTPSamplerProxy>
         <hashTree/>
+
+        <!-- FIXED BACKEND LISTENER -->
         <BackendListener guiclass="BackendListenerGui" testclass="BackendListener" testname="InfluxDB Backend Listener" enabled="true">
           <elementProp name="arguments" elementType="Arguments">
             <collectionProp name="Arguments.arguments">
+
               <elementProp name="influxdbMetricsSender" elementType="Argument">
                 <stringProp name="Argument.name">influxdbMetricsSender</stringProp>
                 <stringProp name="Argument.value">org.apache.jmeter.visualizers.backend.influxdb.HttpMetricsSender</stringProp>
               </elementProp>
+
+              <!-- FIXED URL BELOW -->
               <elementProp name="influxdbUrl" elementType="Argument">
                 <stringProp name="Argument.name">influxdbUrl</stringProp>
-                <stringProp name="Argument.value">http://influxdb.monitoring.svc.cluster.local:8086/write?db=jmeter</stringProp>
+                <stringProp name="Argument.value">http://influxdb-service.monitoring.svc.cluster.local:8086/write?db=jmeter</stringProp>
               </elementProp>
+
               <elementProp name="application" elementType="Argument">
                 <stringProp name="Argument.name">application</stringProp>
                 <stringProp name="Argument.value">JPetStore</stringProp>
               </elementProp>
+
               <elementProp name="measurement" elementType="Argument">
                 <stringProp name="Argument.name">measurement</stringProp>
                 <stringProp name="Argument.value">jmeter_metrics</stringProp>
               </elementProp>
+
               <elementProp name="summaryOnly" elementType="Argument">
                 <stringProp name="Argument.name">summaryOnly</stringProp>
                 <stringProp name="Argument.value">false</stringProp>
               </elementProp>
+
               <elementProp name="samplersRegex" elementType="Argument">
                 <stringProp name="Argument.name">samplersRegex</stringProp>
                 <stringProp name="Argument.value">.*</stringProp>
               </elementProp>
+
             </collectionProp>
           </elementProp>
+
           <stringProp name="classname">org.apache.jmeter.visualizers.backend.influxdb.InfluxdbBackendListenerClient</stringProp>
         </BackendListener>
         <hashTree/>
+
       </hashTree>
     </hashTree>
   </hashTree>
