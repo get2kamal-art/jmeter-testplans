@@ -1,21 +1,27 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <jmeterTestPlan version="1.2" properties="5.0" jmeter="5.6.3">
   <hashTree>
+
     <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="JPetStore Test Plan" enabled="true">
       <stringProp name="TestPlan.comments">Fixed JMeter Plan with InfluxDB Backend Listener</stringProp>
       <boolProp name="TestPlan.functional_mode">false</boolProp>
       <boolProp name="TestPlan.tearDown_on_shutdown">true</boolProp>
       <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
+
+      <!-- Global Variables -->
       <elementProp name="TestPlan.user_defined_variables" elementType="Arguments">
         <collectionProp name="Arguments.arguments">
           <elementProp name="Base_URL" elementType="Argument">
             <stringProp name="Argument.name">Base_URL</stringProp>
-            <stringProp name="Argument.value">https://petstore.octoperf.com</stringProp>
+            <stringProp name="Argument.value">petstore.octoperf.com</stringProp>
           </elementProp>
         </collectionProp>
       </elementProp>
     </TestPlan>
+
     <hashTree>
+
+      <!-- Thread Group -->
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group 1" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController">
@@ -24,49 +30,51 @@
         </elementProp>
         <stringProp name="ThreadGroup.num_threads">2</stringProp>
         <stringProp name="ThreadGroup.ramp_time">5</stringProp>
-        <longProp name="ThreadGroup.start_time">1731417600000</longProp>
-        <longProp name="ThreadGroup.end_time">1731417600000</longProp>
         <boolProp name="ThreadGroup.scheduler">false</boolProp>
-        <stringProp name="ThreadGroup.duration"/>
-        <stringProp name="ThreadGroup.delay"/>
       </ThreadGroup>
+
       <hashTree>
 
+        <!-- HTTP Sampler -->
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Home Page" enabled="true">
           <stringProp name="HTTPSampler.domain">${Base_URL}</stringProp>
-          <stringProp name="HTTPSampler.port"/>
+          <stringProp name="HTTPSampler.port"></stringProp>
           <stringProp name="HTTPSampler.protocol">https</stringProp>
           <stringProp name="HTTPSampler.path">/actions/Account.action?newAccountForm=</stringProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
         </HTTPSamplerProxy>
         <hashTree/>
 
-        <!-- FIXED BACKEND LISTENER -->
+        <!-- BACKEND LISTENER -->
         <BackendListener guiclass="BackendListenerGui" testclass="BackendListener" testname="InfluxDB Backend Listener" enabled="true">
           <elementProp name="arguments" elementType="Arguments">
             <collectionProp name="Arguments.arguments">
 
+              <!-- Metrics Sender -->
               <elementProp name="influxdbMetricsSender" elementType="Argument">
                 <stringProp name="Argument.name">influxdbMetricsSender</stringProp>
                 <stringProp name="Argument.value">org.apache.jmeter.visualizers.backend.influxdb.HttpMetricsSender</stringProp>
               </elementProp>
 
-              <!-- FIXED URL BELOW -->
+              <!-- CORRECTED InfluxDB URL -->
               <elementProp name="influxdbUrl" elementType="Argument">
                 <stringProp name="Argument.name">influxdbUrl</stringProp>
                 <stringProp name="Argument.value">http://influxdb-service.monitoring.svc.cluster.local:8086/write?db=jmeter</stringProp>
               </elementProp>
 
+              <!-- Application Tag -->
               <elementProp name="application" elementType="Argument">
                 <stringProp name="Argument.name">application</stringProp>
                 <stringProp name="Argument.value">JPetStore</stringProp>
               </elementProp>
 
+              <!-- Measurement Name -->
               <elementProp name="measurement" elementType="Argument">
                 <stringProp name="Argument.name">measurement</stringProp>
                 <stringProp name="Argument.value">jmeter_metrics</stringProp>
               </elementProp>
 
+              <!-- Additional Settings -->
               <elementProp name="summaryOnly" elementType="Argument">
                 <stringProp name="Argument.name">summaryOnly</stringProp>
                 <stringProp name="Argument.value">false</stringProp>
