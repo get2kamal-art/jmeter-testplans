@@ -28,7 +28,7 @@
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController">
           <boolProp name="LoopController.continue_forever">false</boolProp>
 
-          <!-- UPDATED Loops -->
+          <!-- UPDATED Loop Count -->
           <stringProp name="LoopController.loops">10</stringProp>
         </elementProp>
 
@@ -56,24 +56,28 @@
           <elementProp name="arguments" elementType="Arguments">
             <collectionProp name="Arguments.arguments">
 
+              <!-- Metrics Sender -->
               <elementProp name="influxdbMetricsSender" elementType="Argument">
                 <stringProp name="Argument.name">influxdbMetricsSender</stringProp>
                 <stringProp name="Argument.value">org.apache.jmeter.visualizers.backend.influxdb.HttpMetricsSender</stringProp>
               </elementProp>
 
+              <!-- CORRECT InfluxDB URL -->
               <elementProp name="influxdbUrl" elementType="Argument">
                 <stringProp name="Argument.name">influxdbUrl</stringProp>
                 <stringProp name="Argument.value">http://influxdb-service.monitoring.svc.cluster.local:8086/write?db=jmeter</stringProp>
               </elementProp>
 
+              <!-- Application Name -->
               <elementProp name="application" elementType="Argument">
                 <stringProp name="Argument.name">application</stringProp>
                 <stringProp name="Argument.value">JPetStore</stringProp>
               </elementProp>
 
+              <!-- FIXED Correct Measurement Name -->
               <elementProp name="measurement" elementType="Argument">
                 <stringProp name="Argument.name">measurement</stringProp>
-                <stringProp name="Argument.value">jmeter_metrics</stringProp>
+                <stringProp name="Argument.value">jmeter</stringProp>
               </elementProp>
 
               <elementProp name="summaryOnly" elementType="Argument">
